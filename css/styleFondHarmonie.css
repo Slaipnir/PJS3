@@ -19,6 +19,7 @@ span{
 }
 
 span{
+
 	font-weight: 700;
 	font-size: 80px;
 }
@@ -28,4 +29,13 @@ span{
 	height:250px;
 	color:white;
 	background: url('../img/fond-harmonie.jpg') center no-repeat;
+}
+.contenu {
+	display: flex;
+	 justify-content: center;
+}
+.contenu span{
+		font-family: 'Dancing Script', cursive;
+	font-weight: 700;
+	font-size: 40px;
 }
