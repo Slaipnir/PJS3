@@ -1,3 +1,60 @@
+<<<<<<< HEAD
+.titre h1{
+	font-weight: 100;
+	font-family: 'Julius Sans One', sans-serif;
+	text-align: center;
+	font-size: 85px;
+}
+span{
+	font-family: 'Dancing Script', cursive;
+}
+
+.titre span{
+	font-weight: 700;
+	font-size: 100px;
+}
+.contain {
+	display: block;
+	overflow: hidden;
+}
+
+/******
+******* PAGE titre dordogne *******
+				   		    ******/
+
+.page{
+	background : url(../img/fondDordogne.jpg) center no-repeat;
+	position: relative;
+}
+.titre{
+	position: inherit;
+	z-index: 300;
+}
+.transparent{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: inherit;
+	background-color: #fff;
+	opacity: 0.5;
+}
+
+
+/******
+******* PAGE2 : MINIATURE EN CHIFFRES *******
+				   		    		  ******/
+
+.page2{
+	background-color: #fff;
+}
+.page2 .info{
+	display: block;
+	overflow: hidden;
+}
+.page2 .info p{
+
+=======
 #fullpage{
 	z-index: -5;
 	width: 100%;
@@ -21,4 +78,5 @@ span{
 .titre span{
 	font-weight: 700;
 	font-size: 80px;
+>>>>>>> ea3bc3fdb3950ada4ce29960a84fb09c7cced095
 }
