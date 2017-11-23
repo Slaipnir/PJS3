@@ -24,6 +24,10 @@ span{
 	font-size: 80px;
 }
 
+.entete{
+	display: flex;
+	 justify-content: center;
+}
 .imgfond{
 	width: 100%;
 	height:250px;
