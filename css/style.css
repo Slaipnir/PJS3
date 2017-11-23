@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
 	margin: 0;
 	padding: 0;
@@ -43,3 +44,37 @@ header li:hover{
 header li:hover a{
 	color: #ffffff;
 }
+=======
+*{
+	margin: 0;
+	padding: 0;
+}
+header, ul{
+	display: block;
+	overflow: hidden;
+}
+header{
+	width: 100%;
+	margin: 3% 0 3% 0;
+}
+header li{
+	float: left;
+	list-style: none;
+	margin-left: 3%;
+	margin-right: 3%;
+}
+header ul{
+	width: auto;
+	border-top: 2px solid #730909;
+	border-bottom: 2px solid #730909;
+}
+.noneMarg{
+	margin: 0;
+}
+header a{
+	color: #730909;
+	font-family: 'Julius Sans One', sans-serif;
+	font-size: 20px;
+	text-decoration: none;
+}
+>>>>>>> ea3bc3fdb3950ada4ce29960a84fb09c7cced095

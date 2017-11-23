@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .titre h1{
 	font-weight: 100;
 	font-family: 'Julius Sans One', sans-serif;
@@ -53,4 +54,29 @@ span{
 }
 .page2 .info p{
 
+=======
+#fullpage{
+	z-index: -5;
+	width: 100%;
+	position: fixed;
+	display: block;
+	background : url('../img/fond.jpg') center no-repeat;
+	opacity: 0.53;
+}
+
+.titre h1{
+	font-weight: 100;
+	font-family: 'Julius Sans One', sans-serif;
+	text-align: center;
+	font-size: 65px;
+}
+
+span{
+	font-family: 'Dancing Script', cursive;
+}
+
+.titre span{
+	font-weight: 700;
+	font-size: 80px;
+>>>>>>> ea3bc3fdb3950ada4ce29960a84fb09c7cced095
 }
