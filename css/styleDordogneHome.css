@@ -1,0 +1,24 @@
+#fullpage{
+	z-index: -5;
+	width: 100%;
+	position: fixed;
+	display: block;
+	background : url('../img/fond.jpg') center no-repeat;
+	opacity: 0.53;
+}
+
+.titre h1{
+	font-weight: 100;
+	font-family: 'Julius Sans One', sans-serif;
+	text-align: center;
+	font-size: 65px;
+}
+
+span{
+	font-family: 'Dancing Script', cursive;
+}
+
+.titre span{
+	font-weight: 700;
+	font-size: 80px;
+}
