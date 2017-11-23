@@ -1,3 +1,79 @@
+<<<<<<< HEAD
+<!doctype html>
+<html>
+	<head>
+		<title></title>
+
+		<meta name="description" content=""> 
+		<meta name="keywords" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" type="text/css" href="css/styleHome.css">
+		<link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Julius+Sans+One|Open+Sans+Condensed:300,700" rel="stylesheet">
+	</head>
+
+	<body>
+		<div id="fullpage">
+		</div>
+
+		<div class="page">
+			<div class="titre">
+				<h1>votre voyage<br><span>en Aquitaine</span> </h1>
+			</div>
+		</div>
+
+		<div class="page">
+			<div id="contain">
+				<div id="rectGris">
+					<h2>visiter <span> la région </span></h2>
+
+					<div id="departement">
+						<div class="dep">
+							<a href="html/dordogne/accueil.html" alt="">
+								<img src="img/dordogne.png" title="Dordogne" >
+								<p>Dordogne</p>
+							</a>
+						</div>
+						<div class="dep">
+							<img src="img/dordogne.png" title="Dordogne">
+							<p>Dordogne</p>
+						</div>
+						<div class="dep">
+							<img src="img/dordogne.png" title="Dordogne">
+							<p>Dordogne</p>
+						</div>
+						<div class="dep">
+							<img src="img/dordogne.png" title="Dordogne">
+							<p>Dordogne</p>
+						</div>
+						<div class="dep">
+							<img src="img/dordogne.png" title="Dordogne">
+							<p>Dordogne</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<script type="text/javascript" src="js/js.js"></script>
+		<script>
+
+			function redim(){
+				var window_height = $(window).height();
+				var titre_height = $('.titre').height();
+
+				$('#fullpage, .page').css('height', window_height);
+				$('.titre').css('padding-top', window_height/2 - titre_height/2);
+			}
+
+			$(document).ready(function(){
+				redim();
+			});
+
+		</script>
+	</body>
+=======
 <!doctype html>
 <html>
 	<head>
@@ -72,4 +148,5 @@
 
 		</script>
 	</body>
+>>>>>>> ea3bc3fdb3950ada4ce29960a84fb09c7cced095
 </html>
