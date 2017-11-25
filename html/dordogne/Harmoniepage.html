@@ -15,50 +15,79 @@
 		<?php
 			require('./menu/tpl');
 		?>
-		<header>
-			<nav>
-				<ul>
+
+		<img src="../../img/logo.jpg" alt="" id="logo">
+		<div class="container">
+			<li>
+				<a href="../../index.html" title="">Accueil</a>
+			</li>
+			<li class="activeli">
+				<a href="" title="">La Dordogne</a>
+			</li>
+			<li>
+				<a href="" title="">Sortir</a>
+			</li>
+			<li>
+				<a href="" title="">Gastronomie</a>
+			</li>
+			<li id="sur-menu">
+				<a href="" title="" id="sur-menu-a">Séjourner</a>
+
+				<ul class="sub-menu">
 					<li>
-						<a href="" alt="">Accueil</a>
+						<a href="" title="">En harmonie avec la nature</a>
 					</li>
-					<li class="noneMarg">|</li>
 					<li>
-						<a href="" alt="">La Dordogne</a>
+						<a href="" title="">Les châteaux</a>
 					</li>
 				</ul>
-			</nav>
-		</header>
-
+			</li>
+			<li>
+				<a href="" title="">Informations</a>
+			</li>
+		</div>
 
 		<div class="page">
 			<div class="entete">
 				<div class="imgfond">
-<<<<<<< HEAD
 					<h1>cc<span>slt</span></h1>
-=======
 					<h1>En harmonie<br><span>avec la nature</span> </h1>
 				</div>
 			</div>
 			<div class="contenu">
 				<div class="titrep">
 				<h4><span>Le Tout confort...</span></h4>
-				</div>
+			</div>
 
 				<div class="choixcateg">
 					<div class="choix">
 						<a href="html/dordogne/accueil.html" alt="">
-							<img src="img/dordogne.png" title="Dordogne" >
+							<img src="../../img/dordogne.png" title="Dordogne" >
 						
 						</a>
 					</div>
 					<div class="choix">
 						<a href="html/dordogne/accueil.html" alt="">
-							<img src="../img/dordogne.png" title="Dordogne" >
+							<img src="../../img/dordogne.png" title="Dordogne" >
 						</a>
 					</div>
 				</div>
->>>>>>> 95499e47cb603814703984acee099a937f8d81e8
 				</div>
 			</div>
+
+			<script type="text/javascript" src="../../js/js.js"></script>
+		<script>
+
+			function redim(){
+				var container_height= $('.container').height();
+
+				$('#logo').css('top', container_height/2);
+			}
+
+			$(document).ready(function(){
+				redim();
+			});
+
+		</script>
 	</body>
 </html>
