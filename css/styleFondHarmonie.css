@@ -34,9 +34,17 @@ span{
 	display: flex;
 	 justify-content: center;
 }
-.choix{
+.choixcateg{
 	display: flex;
-	 justify-content: center;
+	justify-content: center;
+
+}
+.choix{
+		width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 .imgfond{
 	width: 100%;
