@@ -79,7 +79,12 @@
 		<script>
 
 			function redim(){
+				var window_height = $(window).height();
+				var ul_width = $('.sub-menu').width();
+
 				var container_height= $('.container').height();
+
+				$('.sub-menu').css('margin-left', -(ul_width/5));
 
 				$('#logo').css('top', container_height/2);
 			}
