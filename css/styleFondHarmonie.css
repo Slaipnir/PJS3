@@ -9,6 +9,8 @@
 }
 
 .choixcateg{
+	padding-top: 40px;
+
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
@@ -28,6 +30,7 @@ flex-wrap: wrap;
 	background: url('../img/fond-harmonie.jpg') no-repeat center;
 }
 .titrep {
+	padding-top: 40px;
 	display: flex;
 	 justify-content: center;
 }
