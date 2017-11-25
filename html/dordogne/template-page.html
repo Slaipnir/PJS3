@@ -7,13 +7,11 @@
 		<meta name="keywords" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<link rel="stylesheet" type="text/css" href="../../css/styleDordogneHome.css">
 		<link rel="stylesheet" type="text/css" href="../../css/style.css">
 		<link href="https://fonts.googleapis.com/css?family=Clicker+Script|Julius+Sans+One|Open+Sans+Condensed:300,700" rel="stylesheet">
 	</head>
 
 	<body>
-
 		<img src="../../img/logo.jpg" alt="" id="logo">
 
 		<div class="container">
@@ -47,41 +45,18 @@
 		</div>
 
 		<section>
-			<div class="page">
-				<div class="transparent"></div>
+			<div class="banniere">
 				<div class="titre">
-					<h1>bienvenue<br><span>en Dordogne</span> </h1>
+					<h1>titre : <span>blablabla</span> </h1>
+					<div id="ligne"></div>
 				</div>
 			</div>
-		</section>
-
-		<section>
-			<div class="page2">
-				<div class="container">
-					<div class="info">
-						<img src="../../img/icon1.png">
-						<p>9060 km²<br><span>de superficie</span></p>
-					</div>
-					<div class="info">
-						<img src="../../img/icon2.png">
-						<p>416 350<br><span>habitants</span></p>
-					</div>
-					<div class="info">
-						<img src="../../img/icon3.png">
-						<p>3896 km²<br><span>de forêts</span></p>
-					</div>
-					<div class="info">
-						<img src="../../img/icon4.png">
-						<p>227 ans<br><span>depuis sa création</span></p>
-					</div>
-				</div>
+			<div class="containPage">
+				<p>
+					<!-- A REMPLACER PAR CONTENU DE LA PAGE -->
+					blabla blablablablablabla <br>bla<br>bla<br>bla<br>bla<br>bla<br>bla<br>bla<br>bla<br>bla<br>bla<br>bla<br>bla<br>bla<br>bla<br>bla<br>bla<br>bla<br>bla<br>bla<br>bla<br>bla<br>bla<br>bla<br>bla<br>bla<br>bla<br>bla<br>bla<br>bla
+				</p>
 			</div>
-		</section>
-
-		<section>
-			<div class="carousel">
-				<p>cc</p>
-			</div>	
 		</section>
 
 		<footer>
@@ -102,7 +77,6 @@
 
 			function redim(){
 				var window_height = $(window).height();
-				var titre_height = $('.titre').height();
 				var ul_width = $('.sub-menu').width();
 
 				var container_height= $('.container').height();
@@ -110,8 +84,11 @@
 				var footer_heigt = $('footer').height();
 				var footerP_height = $('footer p').height();
 
-				$('.page').css('height', window_height);
-				$('.titre').css('padding-top', window_height/2 - titre_height/2);
+				var banniere_height = $('.banniere').height();
+				var title_height = $('.titre').height();
+
+				$('.titre').css('margin-top', banniere_height/2 - title_height/2 - 2);
+			
 				$('.sub-menu').css('margin-left', -(ul_width/5));
 
 				$('#logo').css('top', container_height/2);
@@ -120,22 +97,6 @@
 
 			$(document).ready(function(){
 				redim();
-
-				$(window).scroll( function(){
-    
-		        	// distance élément au top de la page
-			        $('.page2 .container').each( function(i){
-			            
-			            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-			            var bottom_of_window = $(window).scrollTop() + $(window).height();
-			            
-			            // s'il est complètement scrollé
-			            if( bottom_of_window > bottom_of_object ){
-			                
-			                $(this).animate({'opacity':'1'}, 1000);
-			            }
-			        }); 
-			    });
 			});
 
 		</script>
