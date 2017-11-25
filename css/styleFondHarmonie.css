@@ -24,11 +24,8 @@ span{
 	font-size: 80px;
 }
 
-.imgfond{
-	width: 100%;
-	height:100px;
-	color:grey;
-	background: url('../img/fond-harmonie.jpg') center no-repeat;
+.contenu{
+	background-color: #EAEAEA;
 }
 .entete{
 	display: flex;
@@ -37,14 +34,14 @@ span{
 .choixcateg{
 	display: flex;
 	justify-content: center;
-
+	flex-wrap: wrap;
 }
 .choix{
 		width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
-
+flex-wrap: wrap;
 }
 .imgfond{
 	width: 100%;
