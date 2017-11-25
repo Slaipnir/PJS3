@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .titre h1{
 	font-weight: 100;
 	font-family: 'Julius Sans One', sans-serif;
@@ -6,7 +5,7 @@
 	font-size: 85px;
 }
 span{
-	font-family: 'Dancing Script', cursive;
+	font-family: 'Clicker script', cursive;
 }
 
 .titre span{
@@ -47,36 +46,61 @@ span{
 
 .page2{
 	background-color: #fff;
+	margin: 2% 0 2% 0;
 }
-.page2 .info{
+/*.page2 .info{
 	display: block;
 	overflow: hidden;
+	float: left;
+	width: 20%;
+	margin-left: 5%;
+}
+.page2 .contain{
+	display: block;
+	width: 80%;
+	margin: auto;
+}
+.page2 .info img{
+	width: 45%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 .page2 .info p{
-
-=======
-#fullpage{
-	z-index: -5;
-	width: 100%;
-	position: fixed;
-	display: block;
-	background : url('../img/fond.jpg') center no-repeat;
-	opacity: 0.53;
-}
-
-.titre h1{
-	font-weight: 100;
 	font-family: 'Julius Sans One', sans-serif;
 	text-align: center;
-	font-size: 65px;
+	font-size: 25px;
 }
-
-span{
-	font-family: 'Dancing Script', cursive;
-}
-
-.titre span{
+.page2 .info span{
 	font-weight: 700;
-	font-size: 80px;
->>>>>>> ea3bc3fdb3950ada4ce29960a84fb09c7cced095
+}
+*/
+
+.page2 .container{
+	border : none;
+	margin: auto;
+	width: 65%;
+	justify-content: center;
+}
+.page2 .info{
+	flex-grow: 1;
+	width: 25%;
+}
+.page2 .info img {
+	width: 60%;
+	display: block;
+	margin: auto auto 20px auto;
+}
+.page2 .info p{
+	font-family: 'Julius Sans One', sans-serif;
+	text-align: center;
+	font-size: 25px;
+}
+.page2 .info span{
+	font-weight: 700;
+	font-size: 30px;
+}
+
+.page2 .container{
+	opacity: 0;
 }

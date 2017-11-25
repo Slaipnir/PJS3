@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!doctype html>
 <html>
 	<head>
@@ -10,42 +9,45 @@
 
 		<link rel="stylesheet" type="text/css" href="../../css/styleDordogneHome.css">
 		<link rel="stylesheet" type="text/css" href="../../css/style.css">
-		<link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Julius+Sans+One|Open+Sans+Condensed:300,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Clicker+Script|Julius+Sans+One|Open+Sans+Condensed:300,700" rel="stylesheet">
 	</head>
 
 	<body>
 		<?php
 			require('./menu/tpl');
 		?>
-		<header>
-			<nav>
-				<ul>
+
+		<img src="../../img/logo.jpg" alt="" id="logo">
+
+		<div class="container">
+			<li>
+				<a href="../../index.html" title="">Accueil</a>
+			</li>
+			<li class="activeli">
+				<a href="" title="">La Dordogne</a>
+			</li>
+			<li>
+				<a href="" title="">Sortir</a>
+			</li>
+			<li>
+				<a href="" title="">Gastronomie</a>
+			</li>
+			<li id="sur-menu">
+				<a href="" title="" id="sur-menu-a">Séjourner</a>
+
+				<ul class="sub-menu">
 					<li>
-						<a href="" alt="">Accueil</a>
+						<a href="" title="">En harmonie avec la nature</a>
 					</li>
-					<li class="noneMarg"></li>
 					<li>
-						<a href="" alt="">La Dordogne</a>
-					</li>
-					<li class="noneMarg"></li>
-					<li>
-						<a href="" alt="">Sortir</a>
-					</li>
-					<li class="noneMarg"></li>
-					<li>
-						<a href="" alt="">Gastronomie</a>
-					</li>
-					<li class="noneMarg"></li>
-					<li>
-						<a href="" alt="">Séjourner</a>
-					</li>
-					<li class="noneMarg"></li>
-					<li>
-						<a href="" alt="">Informations</a>
+						<a href="" title="">Les châteaux</a>
 					</li>
 				</ul>
-			</nav>
-		</header>
+			</li>
+			<li>
+				<a href="" title="">Informations</a>
+			</li>
+		</div>
 
 		<section>
 			<div class="page">
@@ -58,94 +60,74 @@
 
 		<section>
 			<div class="page2">
-				<div class="contain">
+				<div class="container">
 					<div class="info">
 						<img src="../../img/icon1.png">
-						<p>9060 km²<span>de superficie</span></p>
+						<p>9060 km²<br><span>de superficie</span></p>
+					</div>
+					<div class="info">
+						<img src="../../img/icon2.png">
+						<p>416 350<br><span>habitants</span></p>
+					</div>
+					<div class="info">
+						<img src="../../img/icon3.png">
+						<p>3896 km²<br><span>de forêts</span></p>
+					</div>
+					<div class="info">
+						<img src="../../img/icon4.png">
+						<p>227 ans<br><span>depuis sa création</span></p>
 					</div>
 				</div>
 			</div>
 		</section>
+
+		<section>
+			<div class="carousel">
+				<p>cc</p>
+			</div>	
+		</section>
+
+		<footer>
+			
+		</footer>
 
 		<script type="text/javascript" src="../../js/js.js"></script>
 		<script>
 
 			function redim(){
 				var window_height = $(window).height();
-				var li_height = $('li').height();
-				var li_padTop = $('li').css('padding-top');
 				var titre_height = $('.titre').height();
+				var ul_width = $('.sub-menu').width();
 
+				var container_height= $('.container').height();
 
-				var li_final = li_height+ parseFloat(li_padTop)*2;
-
-				$('.noneMarg').css({'margin-top': (li_final/2)-(25/2)});
 				$('.page').css('height', window_height);
 				$('.titre').css('padding-top', window_height/2 - titre_height/2);
+				$('.sub-menu').css('margin-left', -(ul_width/5));
+
+				$('#logo').css('top', container_height/2);
 			}
 
 			$(document).ready(function(){
 				redim();
+
+				$(window).scroll( function(){
+    
+		        	// distance élément au top de la page
+			        $('.page2 .container').each( function(i){
+			            
+			            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+			            var bottom_of_window = $(window).scrollTop() + $(window).height();
+			            
+			            // s'il est complètement scrollé
+			            if( bottom_of_window > bottom_of_object ){
+			                
+			                $(this).animate({'opacity':'1'}, 1000);
+			            }
+			        }); 
+			    });
 			});
 
 		</script>
 	</body>
-=======
-<!doctype html>
-<html>
-	<head>
-		<title></title>
-
-		<meta name="description" content=""> 
-		<meta name="keywords" content="">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-		<link rel="stylesheet" type="text/css" href="../../css/styleDordogneHome.css">
-		<link rel="stylesheet" type="text/css" href="../../css/style.css">
-		<link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Julius+Sans+One|Open+Sans+Condensed:300,700" rel="stylesheet">
-	</head>
-
-	<body>
-		<?php
-			require('./menu/tpl');
-		?>
-		<header>
-			<nav>
-				<ul>
-					<li>
-						<a href="" alt="">Accueil</a>
-					</li>
-					<li class="noneMarg">|</li>
-					<li>
-						<a href="" alt="">La Dordogne</a>
-					</li>
-				</ul>
-			</nav>
-		</header>
-
-		<div class="page">
-			<div class="titre">
-				<h1>bienvenue <br> <span>en Dordogne</span> </h1>
-			</div>
-		</div>
-
-		<div class="page">
-			<div id="contain">
-				
-			</div>
-		</div>
-
-		<script type="text/javascript" src="../../js/js.js"></script>
-		<script>
-
-			function redim(){
-			}
-
-			$(document).ready(function(){
-				redim();
-			});
-
-		</script>
-	</body>
->>>>>>> ea3bc3fdb3950ada4ce29960a84fb09c7cced095
 </html>
