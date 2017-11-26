@@ -22,6 +22,10 @@
     align-items: center;
 flex-wrap: wrap;
 }
+.choix:hover img{
+	
+	background-color: rgba(255,140,0,1);
+}
 .banniere{
 	display: block;
 	overflow: hidden;
