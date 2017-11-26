@@ -1,4 +1,3 @@
-
 #fullpage{
 	z-index: -5;
 	width: 100%;
@@ -10,17 +9,26 @@
 
 .choixcateg{
 	padding-top: 40px;
+<<<<<<< HEAD
+=======
 
+>>>>>>> 9f770bc2a93d9236587c8b4efc018c975ee028bc
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
 }
 .choix{
-		width: 40%;
+	width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
-flex-wrap: wrap;
+	flex-wrap: wrap;
+	position: relative;
+}
+.choix img{
+	width: 415px;
+	height: 415px;
+	object-fit: cover;
 }
 .choix:hover img{
 	
@@ -38,3 +46,22 @@ flex-wrap: wrap;
 	display: flex;
 	 justify-content: center;
 }
+<<<<<<< HEAD
+
+.transparent{
+	position: absolute;
+	opacity: 0;
+    background-color: #730909;
+    width: 297px;
+    height: 297px;
+    z-index: 999;
+
+    transform: rotate(45deg);
+}
+
+.choix a:hover .transparent{
+	opacity: 0.6;
+	transition-duration: 1s;
+}
+=======
+>>>>>>> 9f770bc2a93d9236587c8b4efc018c975ee028bc

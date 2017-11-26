@@ -6,8 +6,20 @@
 		<meta name="description" content="">
 		<meta name="keywords" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
+
+			<!-- css propre à la page -->
+=======
+>>>>>>> 9f770bc2a93d9236587c8b4efc018c975ee028bc
 		<link rel="stylesheet" type="text/css" href="../../css/styleFondHarmonie.css">
+			<!-- structure commune aux pages -->
+		<link rel="stylesheet" type="text/css" href="../../css/stylePage.css">
+			<!-- footer & menu -->
 		<link rel="stylesheet" type="text/css" href="../../css/style.css">
+<<<<<<< HEAD
+
+=======
+>>>>>>> 9f770bc2a93d9236587c8b4efc018c975ee028bc
 		<link href="https://fonts.googleapis.com/css?family=Clicker+Script|Julius+Sans+One|Open+Sans+Condensed:300,700" rel="stylesheet">
 	</head>
 
@@ -51,6 +63,14 @@
 					<div id="ligne"></div>
 				</div>
 			</div>
+<<<<<<< HEAD
+
+			<div class="containPage">
+				<div class="contenu">
+					<div class="titrep">
+						<h4><span>Le Tout confort...</span></h4>
+					</div>
+=======
 			<div class="containPage">
 						<div class="contenu">
 				<div class="titrep">
@@ -61,9 +81,44 @@
 					<div class="choix">
 						<a href="html/dordogne/accueil.html" alt="">
 							<img src="../../img/chateau_spa-losange.png" title="chateau spa" style="width: 415px; height: 415px; object-fit: cover;">
+>>>>>>> 9f770bc2a93d9236587c8b4efc018c975ee028bc
 
-						</a>
+					<div class="choixcateg">
+						<div class="choix">
+							<a href="./html/dordogne/accueil.html" alt="">
+								<div class="transparent"></div>
+								<img src="../../img/chateau_spa-losange.png" title="chateau spa">
+							</a>
+						</div>
+						<div class="choix">
+							<a href="./html/dordogne/accueil.html" alt="">
+								<div class="transparent"></div>
+								<img src="../../img/Cabane-perche.png" title="Cabane perche">
+							</a>
+						</div>
 					</div>
+<<<<<<< HEAD
+
+					<div class="titrep">
+						<h4><span>Sauvage...</span></h4>
+					</div>
+
+					<div class="choixcateg">
+						<div class="choix">
+							<a href="./html/dordogne/accueil.html" alt="">
+								<div class="transparent"></div>
+								<img src="../../img/lovnid.png" title="lovnid">
+
+							</a>
+						</div>
+						<div class="choix">
+							<a href="./html/dordogne/accueil.html" alt="">
+								<div class="transparent"></div>
+								<img src="../../img/cabane-dans-foret.png" title="cabane dans la foret">
+							</a>
+						</div>
+					</div>
+=======
 					<div class="choix">
 						<a href="html/dordogne/accueil.html" alt="">
 							<img src="../../img/Cabane-perche.png" title="Cabane perche"  style="width: 415px; height: 415px; object-fit: cover;">
@@ -84,8 +139,7 @@
 					<a href="html/dordogne/accueil.html" alt="">
 						<img src="../../img/cabane-dans-foret.png" title="cabane dans la foret " style="width: 415px; height: 415px; object-fit: cover;">
 					</a>
-				</div>
-			</div>
+>>>>>>> 9f770bc2a93d9236587c8b4efc018c975ee028bc
 				</div>
 			</div>
 		</section>
@@ -101,15 +155,29 @@
 					Rejoignez-nous :
 				</p>
 			</div>
+<<<<<<< HEAD
+=======
+		</section>
+
+		<footer>
+			<div class="container">
+				<img src="../../img/logo-twitter.png" alt="">
+				<img src="../../img/logo-pinterest.png" alt="">
+				<img src="../../img/logo-instagram.png" alt="">
+				<img src="../../img/logo-googleP.png" alt="">
+				<img src="../../img/logo-fb.png" alt="">
+				<p>
+					Rejoignez-nous :
+				</p>
+			</div>
+>>>>>>> 9f770bc2a93d9236587c8b4efc018c975ee028bc
 		</footer>
 
 		<script type="text/javascript" src="../../js/js.js"></script>
 		<script>
-
 			function redim(){
 				var window_height = $(window).height();
 				var ul_width = $('.sub-menu').width();
-
 				var container_height= $('.container').height();
 
 				var footer_heigt = $('footer').height();
@@ -117,19 +185,33 @@
 
 				var banniere_height = $('.banniere').height();
 				var title_height = $('.titre').height();
+<<<<<<< HEAD
+=======
 
 				$('.titre').css('margin-top', banniere_height/2 - title_height/2 - 2);
 
 				$('.sub-menu').css('margin-left', -(ul_width/5));
+>>>>>>> 9f770bc2a93d9236587c8b4efc018c975ee028bc
 
+				var choix_height = $('.choix').height();
+				var choix_width = $('.choix').width();
+				var transp_height = $('.transparent').height();
+
+				$('.titre').css('margin-top', banniere_height/2 - title_height/2 - 2);
+				$('.sub-menu').css('margin-left', -(ul_width/5));
 				$('#logo').css('top', container_height/2);
 				$('footer img, footer p').css('margin-top', footer_heigt/2 - footerP_height/2);
+<<<<<<< HEAD
+=======
 			}
+>>>>>>> 9f770bc2a93d9236587c8b4efc018c975ee028bc
 
+				$('.transparent').css('left', choix_width/2 -transp_height/2-2);
+				$('.transparent').css('top', choix_height/2 -transp_height/2);
+			}
 			$(document).ready(function(){
 				redim();
 			});
-
 		</script>
 	</body>
 </html>
