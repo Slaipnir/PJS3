@@ -9,10 +9,6 @@
 
 .choixcateg{
 	padding-top: 40px;
-<<<<<<< HEAD
-=======
-
->>>>>>> 9f770bc2a93d9236587c8b4efc018c975ee028bc
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
@@ -42,7 +38,6 @@
 	display: flex;
 	 justify-content: center;
 }
-<<<<<<< HEAD
 
 .transparent{
 	position: absolute;
@@ -59,5 +54,3 @@
 	opacity: 0.6;
 	transition-duration: 1s;
 }
-=======
->>>>>>> 9f770bc2a93d9236587c8b4efc018c975ee028bc
