@@ -24,6 +24,7 @@ span{
 .page{
 	background : url(../img/fondDordogne.jpg) center no-repeat;
 	position: relative;
+	background-size: cover;
 }
 .titre{
 	position: inherit;
