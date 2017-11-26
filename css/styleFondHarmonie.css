@@ -26,6 +26,9 @@
 	height: 415px;
 	object-fit: cover;
 }
+.choix:hover img{
+	/*background-color: rgba(255,140,0,1);*/
+}
 .banniere{
 	display: block;
 	overflow: hidden;
