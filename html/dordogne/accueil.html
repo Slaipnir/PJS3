@@ -9,6 +9,7 @@
 
 		<link rel="stylesheet" type="text/css" href="../../css/styleDordogneHome.css">
 		<link rel="stylesheet" type="text/css" href="../../css/style.css">
+		
 		<link href="https://fonts.googleapis.com/css?family=Clicker+Script|Julius+Sans+One|Open+Sans+Condensed:300,700" rel="stylesheet">
 	</head>
 
@@ -59,20 +60,20 @@
 			<div class="page2">
 				<div class="container">
 					<div class="info">
-						<img src="../../img/icon1.png">
-						<p>9060 km²<br><span>de superficie</span></p>
+						<img src="../../img/icon1.png" alt="">
+						<p>9060 km²<br><span class="rouge">de superficie</span></p>
 					</div>
 					<div class="info">
-						<img src="../../img/icon2.png">
-						<p>416 350<br><span>habitants</span></p>
+						<img src="../../img/icon2.png" alt="">
+						<p>416 350<br><span class="vert">habitants</span></p>
 					</div>
 					<div class="info">
-						<img src="../../img/icon3.png">
-						<p>3896 km²<br><span>de forêts</span></p>
+						<img src="../../img/icon3.png" alt="">
+						<p>3896 km²<br><span class="rouge">de forêts</span></p>
 					</div>
 					<div class="info">
-						<img src="../../img/icon4.png">
-						<p>227 ans<br><span>depuis sa création</span></p>
+						<img src="../../img/icon4.png" alt="">
+						<p>227 ans<br><span class="vert">depuis sa création</span></p>
 					</div>
 				</div>
 			</div>
@@ -83,6 +84,48 @@
 				<p>cc</p>
 			</div>	
 		</section>
+
+		<section>
+			<div class="page4">	
+				<div class="contain">
+					<h2>Les visites<span> à réaliser</span></h2>
+
+					<div id="Blocvisites">
+						<div class="visite">
+							<a href="" title="">
+								<div class="transparent"></div>
+								<img src="../../img/chateaux.png" alt="">
+							</a>
+						</div>
+						<div class="visite end">
+							<a href="" title="">
+								<div class="transparent"></div>
+								<img src="../../img/grottes.png" alt="">
+							</a>
+						</div>
+						<div class="visite">
+							<a href="" title="">
+								<div class="transparent"></div>
+								<img src="../../img/musees.png" alt="">
+							</a>
+						</div>
+						<div class="visite end">
+							<a href="" title="">
+								<div class="transparent"></div>
+								<img src="../../img/jardins.png" alt="">
+							</a>
+						</div>
+						<div class="visite">
+							<a href="" title="">
+								<div class="transparent"></div>
+								<img src="../../img/eglises.png" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
 
 		<footer>
 			<div class="container">
@@ -116,13 +159,19 @@
 
 				$('#logo').css('top', container_height/2);
 				$('footer img, footer p').css('margin-top', footer_heigt/2 - footerP_height/2);
+
+				var visite_height = $('.visite img').height();
+				var visite_width = $('.visite').width();
+				var transp_height = $('.page4 .transparent').height();
+
+				$('.page4 .transparent').css('left', visite_width/2 -transp_height/2-2);
+				$('.page4 .transparent').css('top', visite_height/2 -transp_height/2);
 			}
 
 			$(document).ready(function(){
 				redim();
 
 				$(window).scroll( function(){
-    
 		        	// distance élément au top de la page
 			        $('.page2 .container').each( function(i){
 			            
@@ -132,7 +181,7 @@
 			            // s'il est complètement scrollé
 			            if( bottom_of_window > bottom_of_object ){
 			                
-			                $(this).animate({'opacity':'1'}, 1000);
+			                $(this).animate({'opacity':'1'}, 1500);
 			            }
 			        }); 
 			    });

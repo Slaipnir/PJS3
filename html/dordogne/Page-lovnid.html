@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+	<head>
+		<title></title>
+
+		<meta name="description" content=""> 
+		<meta name="keywords" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- structure commune aux pages /!\ ne pas toucher -->
+		<link rel="stylesheet" type="text/css" href="../../css/stylePage.css">
+			<!-- footer & menu -->
+		<link rel="stylesheet" type="text/css" href="../../css/style.css">
+		
+		<link rel="stylesheet" type="text/css" href="../../css/styleHotel.css">
+		
+		<link href="https://fonts.googleapis.com/css?family=Clicker+Script|Julius+Sans+One|Open+Sans+Condensed:300,700" rel="stylesheet">
+	</head>
+
+	<body>
+		<img src="../../img/logo.jpg" alt="" id="logo">
+
+		<div class="container">
+			<li>
+				<a href="../../index.html" title="">Accueil</a>
+			</li>
+			<li class="activeli">
+				<a href="" title="">La Dordogne</a>
+			</li>
+			<li>
+				<a href="" title="">Sortir</a>
+			</li>
+			<li>
+				<a href="" title="">Gastronomie</a>
+			</li>
+			<li id="sur-menu">
+				<a href="" title="" id="sur-menu-a">Séjourner</a>
+
+				<ul class="sub-menu">
+					<li>
+						<a href="" title="">En harmonie avec la nature</a>
+					</li>
+					<li>
+						<a href="" title="">Les châteaux</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="" title="">Informations</a>
+			</li>
+		</div>
+
+		<section>
+			<div class="banniere">
+				<div class="titre">
+					<h1>titre : <span>blablabla</span> </h1>
+					<div id="ligne"></div>
+				</div>
+			</div>
+			
+		</section>
+		<section>
+		<div class="containPage">
+				<section id="slideshow">
+		
+	<div class="container">
+		<div class="c_slider"></div>
+		<div class="slider">
+			<figure>
+				<img src="../../img/lovnid1.jpg" alt="" width="606px" height="358px" />
+				<figcaption>lovnid</figcaption>
+
+			</figure><!--
+			--><figure>
+				<img src="../../img/lovnid2.jpg" alt="" width="606px" height="358px" />
+				<figcaption>lovnid</figcaption>
+			</figure><!--
+			--><figure>
+				<img src="../../img/lovnid3.jpg" alt="" width="606px" height="358px" />
+				<figcaption>lovnid</figcaption>
+
+			</figure>
+		</div>
+	</div>
+		
+	<span id="timeline"></span>
+</section>
+			</div>
+		</section>
+		<footer>
+			<div class="container">
+				<img src="../../img/logo-twitter.png" alt="">
+				<img src="../../img/logo-pinterest.png" alt="">
+				<img src="../../img/logo-instagram.png" alt="">
+				<img src="../../img/logo-googleP.png" alt="">
+				<img src="../../img/logo-fb.png" alt="">
+				<p>
+					Rejoignez-nous : 
+				</p>
+			</div>
+		</footer>
+
+		<script type="text/javascript" src="../../js/js.js"></script>
+		<script>
+
+			function redim(){
+				var window_height = $(window).height();
+				var ul_width = $('.sub-menu').width();
+
+				var container_height= $('.container').height();
+
+				var footer_heigt = $('footer').height();
+				var footerP_height = $('footer p').height();
+
+				var banniere_height = $('.banniere').height();
+				var title_height = $('.titre').height();
+
+				$('.titre').css('margin-top', banniere_height/2 - title_height/2 - 2);
+			
+				$('.sub-menu').css('margin-left', -(ul_width/5));
+
+				$('#logo').css('top', container_height/2);
+				$('footer img, footer p').css('margin-top', footer_heigt/2 - footerP_height/2);
+			}
+
+			$(document).ready(function(){
+				redim();
+			});
+
+		</script>
+	</body>
+</html>
