@@ -1,0 +1,59 @@
+#fullpage{
+	z-index: -5;
+	width: 100%;
+	position: fixed;
+	display: block;
+	background : url('../img/fond.jpg') center no-repeat;
+	opacity: 0.53;
+}
+
+.choixcateg{
+	padding-top: 40px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.choix{
+	width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	flex-wrap: wrap;
+	position: relative;
+}
+.choix img{
+	width: 415px;
+	height: 415px;
+	object-fit: cover;
+}
+.choix:hover img{
+	/*background-color: rgba(255,140,0,1);*/
+}
+.banniere{
+	display: block;
+	overflow: hidden;
+	width: 100%;
+	height: 300px;
+	background: url('../img/fond-harmonie.jpg') no-repeat center;
+}
+.titrep {
+	padding-top: 40px;
+	display: flex;
+	 justify-content: center;
+}
+
+.transparent{
+	position: absolute;
+	opacity: 0;
+    background-color: #730909;
+    width: 297px;
+    height: 297px;
+    z-index: 999;
+
+    transform: rotate(45deg);
+}
+
+.choix a:hover .transparent{
+	opacity: 0.6;
+	transition-duration: 1s;
+}

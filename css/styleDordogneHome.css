@@ -1,24 +1,107 @@
-#fullpage{
-	z-index: -5;
-	width: 100%;
-	position: fixed;
-	display: block;
-	background : url('../img/fond.jpg') center no-repeat;
-	opacity: 0.53;
-}
-
 .titre h1{
 	font-weight: 100;
 	font-family: 'Julius Sans One', sans-serif;
 	text-align: center;
-	font-size: 65px;
+	font-size: 85px;
 }
-
 span{
-	font-family: 'Dancing Script', cursive;
+	font-family: 'Clicker script', cursive;
 }
 
 .titre span{
 	font-weight: 700;
-	font-size: 80px;
+	font-size: 100px;
+}
+.contain {
+	display: block;
+	overflow: hidden;
+}
+
+/******
+******* PAGE titre dordogne *******
+				   		    ******/
+
+.page{
+	background : url(../img/fondDordogne.jpg) center no-repeat;
+	position: relative;
+	background-size: cover;
+}
+.titre{
+	position: inherit;
+	z-index: 300;
+}
+.transparent{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: inherit;
+	background-color: #fff;
+	opacity: 0.5;
+}
+
+
+/******
+******* PAGE2 : MINIATURE EN CHIFFRES *******
+				   		    		  ******/
+
+.page2{
+	background-color: #fff;
+	margin: 2% 0 2% 0;
+}
+/*.page2 .info{
+	display: block;
+	overflow: hidden;
+	float: left;
+	width: 20%;
+	margin-left: 5%;
+}
+.page2 .contain{
+	display: block;
+	width: 80%;
+	margin: auto;
+}
+.page2 .info img{
+	width: 45%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.page2 .info p{
+	font-family: 'Julius Sans One', sans-serif;
+	text-align: center;
+	font-size: 25px;
+}
+.page2 .info span{
+	font-weight: 700;
+}
+*/
+
+.page2 .container{
+	border : none;
+	margin: auto;
+	width: 65%;
+	justify-content: center;
+}
+.page2 .info{
+	flex-grow: 1;
+	width: 25%;
+}
+.page2 .info img {
+	width: 60%;
+	display: block;
+	margin: auto auto 20px auto;
+}
+.page2 .info p{
+	font-family: 'Julius Sans One', sans-serif;
+	text-align: center;
+	font-size: 25px;
+}
+.page2 .info span{
+	font-weight: 700;
+	font-size: 30px;
+}
+
+.page2 .container{
+	opacity: 0;
 }
