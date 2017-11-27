@@ -49,33 +49,6 @@ span{
 	background-color: #fff;
 	margin: 2% 0 2% 0;
 }
-/*.page2 .info{
-	display: block;
-	overflow: hidden;
-	float: left;
-	width: 20%;
-	margin-left: 5%;
-}
-.page2 .contain{
-	display: block;
-	width: 80%;
-	margin: auto;
-}
-.page2 .info img{
-	width: 45%;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-.page2 .info p{
-	font-family: 'Julius Sans One', sans-serif;
-	text-align: center;
-	font-size: 25px;
-}
-.page2 .info span{
-	font-weight: 700;
-}
-*/
 
 .page2 .container{
 	border : none;
@@ -99,9 +72,74 @@ span{
 }
 .page2 .info span{
 	font-weight: 700;
-	font-size: 30px;
+	font-size: 35px;
 }
-
+.page2 .vert{
+	color: #B4D7A1;
+}
+.page2 .rouge{
+	color: #730909;
+}
 .page2 .container{
 	opacity: 0;
+}
+
+/******
+******* PAGE3 : CAROUSEL D IMAGES *******
+				   		       	  ******/
+
+.carousel{
+	background-color: red;
+}
+
+/******
+******* PAGE4 : VISITES A REALISER *******
+				   		       	   ******/
+
+.page4{
+	background-color: #eaeaea;
+	display: block;
+	overflow: hidden;
+}
+.page4 .contain{
+	margin: 3% 0 3% 0;
+}
+.page4 h2{
+	text-align: center;
+	font-family: 'Julius Sans One', sans-serif;
+	font-weight: 100;
+	font-size: 45px;
+}
+
+.page4 span{
+	font-size: 55px;
+}
+.page4 #Blocvisites{
+	display: flex;
+	width: 80%;
+    margin: auto;
+    height: 330px;
+}
+.page4 .visite{
+	flex-grow: 3;
+	position: relative;
+}
+.page4 .visite img {
+	width: 200px;
+	height: 200px;
+}
+.page4 .end{
+	align-self: flex-end;
+}
+.page4 .transparent{
+	background-color:  #730909;
+	width: 142px;
+	height: 142px;
+	transform: rotate(45deg);
+	opacity: 0;
+}
+
+.page4 .visite a:hover .transparent{
+	opacity: 0.6;
+	transition-duration: 1s;
 }
