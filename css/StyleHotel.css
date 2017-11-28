@@ -1,27 +1,26 @@
-
 .premcont{
 	display: flex;
-	padding-top:3%;
-	
-
+  width: 80%;
+	padding-top:3%; 
+  margin: auto;
 }
 .contain{
-	display: flex;
-	width:60%;
-	margin:auto;
-
+	/*margin:auto;*/
 }
 .texte{
-	
-	width:30%;
+	width: 40%;
 	margin:auto;
+  text-align: justify;
 }
 #titrehotel{
 	padding-top:2%;
-	
+}
+#slideshow{
+  width: 50%;
 }
 div#slider { 
-	width: 80%; max-width: 1000px; 
+	/*width: 80%;
+  max-width: 1000px; */
 } 
 
 div#slider figure {
@@ -40,14 +39,15 @@ div#slider figure img {
 	width: 20%; /*100/5images=20*/
 	height: auto; 
 	float: left; 
-	}
+}
 	
 
 /* Enfin, nous cachons ce qui dépasse (overflow) de la div : */
 div#slider { 
-	width: 80%; 
-	max-width: 1000px; 
-	overflow: hidden }
+	/*width: 80%; 
+	max-width: 1000px; */
+	overflow: hidden
+}
 
 @keyframes slidy {
   0% { left: 0%; }
