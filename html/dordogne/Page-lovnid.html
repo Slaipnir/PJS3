@@ -15,6 +15,9 @@
 		<link rel="stylesheet" type="text/css" href="../../css/styleHotel.css">
 		
 		<link href="https://fonts.googleapis.com/css?family=Clicker+Script|Julius+Sans+One|Open+Sans+Condensed:300,700" rel="stylesheet">
+		<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+		
+		
 	</head>
 	
 	<body>
@@ -78,6 +81,8 @@
 							</div>
 							
 							<span id="timeline"></span>
+							
+							
 						</div>
 					</section>
 					<div class="texte"><p>
@@ -88,9 +93,39 @@
 						</div>
 					</div>	
 					<div class="deuxiemecont">
-						
+						<div class="infolieu" style="width:1000px;height:200px;"><p><b>Le lieu:</b></p>
+						<div><span>Exterieur</span>
+						<p>Lac</p>
+						<p>Forêt</p>
+						</div>
+						<div><span>Activités</span>
+						<p>Randonée</p>
+						<p>Piscine</p>
+						<p>Parc de Jeux</p>
+						<p>Pêche</p>
+						<p>Massage</p>
+						</div>
+						<div><span>Lieux à proximité</span>
+						<p>Château de Rouffiac</p>
+						<p>Camp Romains</p>
+						</div>
+						</div>
+						<div id="carte">
+							
+							<div style='overflow:hidden;height:274px;width:470px;'>
+								<div id='gmap_canvas' style='height:274px;width:470px;'>
+								</div>
+								<div><small><a href="https://embedgooglemaps.com/fr/">emg.com/fr</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
+							</div>
+							
+							
+						</div>
+					<div class="contact" style="width:411px;height:200px;"><br><p >CONTACT :</p><br><br>
+						<p>Mail: <a href="mailto:"> grand-vignoble@orange.fr </a></p>
+							<p >TÉL. : 05 53 52 37 91</p>
+						<p >Site web:  <a href="http://www.cabane-en-perigord.com/Chambre-perchee.html"> Le Manoir du Grand Vignoble</a></p></div>
 					</div>
-			</div>
+					</div>
 				</section>
 				<footer>
 					<div class="container">
@@ -133,5 +168,13 @@
 					});
 					
 				</script>
+				<script type='text/javascript'>
+					function init_map(){var myOptions = {zoom:10,center:new google.maps.LatLng(45.43689920000001,1.18415779999998),mapTypeId: google.maps.MapTypeId.ROADMAP};
+						map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+						marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(45.43689920000001,1.18415779999998)});
+						infowindow = new google.maps.InfoWindow({content:'<strong>Lov\'nid</strong><br>Moulin de la jarousse<br>'});
+						google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);
+					}google.maps.event.addDomListener(window, 'load', init_map);
+				</script>
 			</body>
-		</html>				
+		</html>																									
