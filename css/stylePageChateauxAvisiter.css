@@ -95,21 +95,20 @@ footer img{
 footer img, footer p{
 	margin-top: 30px;
 }
-<<<<<<< HEAD
-=======
-
-
 
 /******
 ******* TEMPLATE DES PAGES *******
 						   ******/
 
-.titre h1{
+.titrep h4{
+	padding-top : 50px;
+	padding-bottom : 30px;
 	font-weight: 100;
 	font-family: 'Julius Sans One', sans-serif;
 	text-align : center;
 	font-size: 45px;
-	color: #fff;
+	color: black;
+	
 }
 span{
 	font-family: 'Clicker script', cursive;
@@ -121,7 +120,7 @@ span{
 	overflow: hidden;
 	width: 100%;
 	height: 400px;
-	background: url(../img/fondChateau01.jpg) no-repeat center;
+	background: url(../img/Sortir-Chateaux/fondChateau01.jpg) no-repeat center;
 	background-size: cover;
 }
 #ligne{
@@ -143,6 +142,15 @@ span{
 	font-size : 20px;
 }
 
-.containPage imageChateaux{
-	background: url(../img/chateau03.jpg) no-repeat center;
+.imageChateaux img{
+	display: block;
+    margin: auto;
+	width : 30%;
+	height : 40%;
 }
+
+.texte h1{
+	display : block;
+	margin: auto;
+}
+
