@@ -7,8 +7,9 @@
 		<meta name="keywords" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<link rel="stylesheet" type="text/css" href="../../css/styleDordogneHome.css">
 		<link rel="stylesheet" type="text/css" href="../../css/style.css">
+		<link rel="stylesheet" type="text/css" href="../../css/slick.css">
+		<link rel="stylesheet" type="text/css" href="../../css/styleDordogneHome.css">
 		
 		<link href="https://fonts.googleapis.com/css?family=Clicker+Script|Julius+Sans+One|Open+Sans+Condensed:300,700" rel="stylesheet">
 	</head>
@@ -17,110 +18,150 @@
 
 		<img src="../../img/logo.jpg" alt="" id="logo">
 
-		<div class="container">
-			<li>
-				<a href="../../index.html" title="">Accueil</a>
-			</li>
-			<li class="activeli">
-				<a href="" title="">La Dordogne</a>
-			</li>
-			<li>
-				<a href="" title="">Sortir</a>
-			</li>
-			<li>
-				<a href="" title="">Gastronomie</a>
-			</li>
-			<li id="sur-menu">
-				<a href="" title="" id="sur-menu-a">Séjourner</a>
-
-				<ul class="sub-menu">
+		<header>
+			<nav class="container">
+				<ul>
 					<li>
-						<a href="" title="">En harmonie avec la nature</a>
+						<a href="../../index.html" title="">Accueil</a>
+					</li>
+					<li class="activeli">
+						<a href="" title="">La Dordogne</a>
 					</li>
 					<li>
-						<a href="" title="">Les châteaux</a>
+						<a href="" title="">Sortir</a>
+					</li>
+					<li>
+						<a href="" title="">Gastronomie</a>
+					</li>
+					<li id="sur-menu">
+						<a href="" title="" id="sur-menu-a">Séjourner</a>
+
+						<ul class="sub-menu">
+							<li>
+								<a href="" title="">En harmonie avec la nature</a>
+							</li>
+							<li>
+								<a href="" title="">Les châteaux</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="" title="">Informations</a>
 					</li>
 				</ul>
-			</li>
-			<li>
-				<a href="" title="">Informations</a>
-			</li>
-		</div>
+			</nav>
+		</header>
 
-		<section>
-			<div class="page">
+		<section class="page">
 				<div class="transparent"></div>
 				<div class="titre">
 					<h1>bienvenue<br><span>en Dordogne</span> </h1>
 				</div>
-			</div>
 		</section>
 
-		<section>
-			<div class="page2">
-				<div class="container">
-					<div class="info">
-						<img src="../../img/icon1.png" alt="">
-						<p>9060 km²<br><span class="rouge">de superficie</span></p>
-					</div>
-					<div class="info">
-						<img src="../../img/icon2.png" alt="">
-						<p>416 350<br><span class="vert">habitants</span></p>
-					</div>
-					<div class="info">
-						<img src="../../img/icon3.png" alt="">
-						<p>3896 km²<br><span class="rouge">de forêts</span></p>
-					</div>
-					<div class="info">
-						<img src="../../img/icon4.png" alt="">
-						<p>227 ans<br><span class="vert">depuis sa création</span></p>
-					</div>
+		<section class="page2">
+			<div class="container">
+				<div class="info">
+					<img src="../../img/icon1.png" alt="">
+					<p>
+						9060 km²<br><span class="rouge">de superficie</span>
+					</p>
+				</div>
+				<div class="info">
+					<img src="../../img/icon2.png" alt="">
+					<p>
+						416 350<br><span class="vert">habitants</span>
+					</p>
+				</div>
+				<div class="info">
+					<img src="../../img/icon3.png" alt="">
+					<p>
+						3896 km²<br><span class="rouge">de forêts</span>
+					</p>
+				</div>
+				<div class="info">
+					<img src="../../img/icon4.png" alt="">
+					<p>
+						227 ans<br><span class="vert">depuis sa création</span>
+					</p>
 				</div>
 			</div>
 		</section>
 
-		<section>
-			<div class="carousel">
-				<p>cc</p>
-			</div>	
+
+		<section class="containSlide">
+			<div class="divnav slider-prev">
+				<img class="navSlider" src="../../img/fleche.png" alt="">
+			</div>
+
+			<div class="divnav navprev slider-next">
+				<img class="navSlider" src="../../img/fleche.png" alt="">
+			</div>
+
+			<div class="slider">
+				<div class="item" id="halloween">
+					<a href="#" title="">
+			     		<p>Spécial<br><span>Halloween</span></p>
+			     	</a>
+			    </div>
+
+			    <div class="item" id="infospratiques">
+					<a href="#" title="">
+			     		<p>Informations<br><span>pratiques</span></p>
+			     	</a>
+			    </div>
+
+			    <div class="item" id="gastronomie">
+					<a href="#" title="">
+			     		<p>Gastronomie<br><span>dordognaise</span></p>
+			     	</a>
+			    </div>
+
+			    <div class="item" id="sweetdreams">
+					<a href="#" title="">
+			     		<p>Sweet<br><span>dreams</span></p>
+			     	</a>
+			    </div>
+			</div>
 		</section>
 
-		<section>
-			<div class="page4">	
-				<div class="contain">
-					<h2>Les visites<span> à réaliser</span></h2>
+		<section class="page4">	
+			<div class="contain">
+				<h2>Les visites<span> à réaliser</span></h2>
 
-					<div id="Blocvisites">
-						<div class="visite">
-							<a href="" title="">
-								<div class="transparent"></div>
-								<img src="../../img/chateaux.png" alt="">
-							</a>
-						</div>
-						<div class="visite end">
-							<a href="" title="">
-								<div class="transparent"></div>
-								<img src="../../img/grottes.png" alt="">
-							</a>
-						</div>
-						<div class="visite">
-							<a href="" title="">
-								<div class="transparent"></div>
-								<img src="../../img/musees.png" alt="">
-							</a>
-						</div>
-						<div class="visite end">
-							<a href="" title="">
-								<div class="transparent"></div>
-								<img src="../../img/jardins.png" alt="">
-							</a>
-						</div>
-						<div class="visite">
-							<a href="" title="">
-								<div class="transparent"></div>
-								<img src="../../img/eglises.png" alt="">
-							</a>
-						</div>
+				<div id="Blocvisites">
+					<div class="visite">
+						<a href="" title="">
+							<div class="transparent"></div>
+							<img src="../../img/chateaux.png" alt="">
+						</a>
+					</div>
+
+					<div class="visite end">
+						<a href="" title="">
+							<div class="transparent"></div>
+							<img src="../../img/grottes.png" alt="">
+						</a>
+					</div>
+
+					<div class="visite">
+						<a href="" title="">
+							<div class="transparent"></div>
+							<img src="../../img/musees.png" alt="">
+						</a>
+					</div>
+
+					<div class="visite end">
+						<a href="" title="">
+							<div class="transparent"></div>
+							<img src="../../img/jardins.png" alt="">
+						</a>
+					</div>
+					<div class="visite">
+						<a href="" title="">
+							<div class="transparent"></div>
+							<img src="../../img/eglises.png" alt="">
+						</a>
 					</div>
 				</div>
 			</div>
@@ -141,6 +182,7 @@
 		</footer>
 
 		<script type="text/javascript" src="../../js/js.js"></script>
+		<script type="text/javascript" src="../../js/slick.min.js"></script>
 		<script>
 
 			function redim(){
@@ -184,6 +226,22 @@
 			                $(this).animate({'opacity':'1'}, 1500);
 			            }
 			        }); 
+			    });
+			    $(".slider").slick({
+			    	slidesToShow: 1,
+			    	slidesToScroll: 1,
+					//autoplay: true,
+					autoplaySpeed: 3000,
+  					speed: 2000,
+  					arrows: false
+			    });
+
+			    $('.slider-next').click(function(){
+			    	$('.slider').slick('slickNext');
+			    });
+
+			    $('.slider-prev').click(function(){
+			    	$('.slider').slick('slickPrev');
 			    });
 			});
 
