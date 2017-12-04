@@ -1,0 +1,22 @@
+.banniere{
+	background: url(../img/fond.jpg) no-repeat bottom;
+}
+.transparent{
+	height: inherit;
+	width: inherit;
+	display: block;
+	overflow:hidden;
+	background-color: rgba(255,255,255,0.4);
+}
+.containPage h2{
+	font-weight: 100;
+	font-family: 'Julius Sans One', sans-serif;
+	font-size: 40px;
+}
+.contain{
+	display: flex;
+}
+.contain img{
+	width : 200px;
+	height: 200px;
+}

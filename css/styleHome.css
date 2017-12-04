@@ -80,3 +80,33 @@ span{
 .dep img{
 	width: 75%;
 }
+
+
+.st0{
+	fill:#FBFBFA;
+}
+.st1{
+	fill:#EFF6F4;
+}
+.st2, .st3, .st4{
+	fill:none;
+	stroke:#333333;
+	stroke-width:2;
+	stroke-linecap:round;
+	stroke-linejoin:round;
+}
+.st3{
+	stroke:#73160E;
+}
+.st4{
+	stroke:#8DA3C3;
+}
+.st5{
+	fill:#666666;
+}
+
+.carteAquitaine .st0{
+	fill:#FBFBFA;
+	stroke:#730909;
+	stroke-width: 1.5;
+}
