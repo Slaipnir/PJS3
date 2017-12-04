@@ -18,8 +18,8 @@
 } 
 /********************************** TEXTE  ***********************************************/
 .texte{
-  width: 25%;
-  margin-left:3%;
+  width: 30%;
+  margin-left: 5%;
   margin-top:2%;
   text-align: justify;
 }
@@ -39,8 +39,8 @@
 
 /************************************  DIAPORAMA   *********************************************/
 #slideshow{
-  width: 50%;
-  
+  width: 55%;
+  margin-left: 5%;
 }
 div#slider { 
   /*width: 80%;
