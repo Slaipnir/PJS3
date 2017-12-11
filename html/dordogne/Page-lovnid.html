@@ -1,21 +1,23 @@
 <!doctype html>
 <html>
 	<head>
-		<title></title>
-		
+		<title>Lov'Nid</title>
+		  <meta charset="utf-8">
+
 		<meta name="description" content=""> 
 		<meta name="keywords" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		
 		<!-- structure commune aux pages /!\ ne pas toucher -->
 		<link rel="stylesheet" type="text/css" href="../../css/stylePage.css">
+		<link rel="stylesheet" type="text/css" href="../../css/slick.css">
 		<!-- footer & menu -->
 		<link rel="stylesheet" type="text/css" href="../../css/style.css">
 		<link rel="stylesheet" type="text/css" href="../../css/font-awesome.min.css">
 		
 		<link rel="stylesheet" type="text/css" href="../../css/styleHotel.css">
 		
-		<link href="https://fonts.googleapis.com/css?family=Clicker+Script|Julius+Sans+One|Open+Sans+Condensed:300,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Clicker+Script%7CJulius+Sans+One%7COpen+Sans+Condensed:300,700" rel="stylesheet">
 		<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
 		
 		
@@ -68,25 +70,54 @@
 			</div>
 			
 		</section>
-		<section>
 			
 			<div class="containPage">
-				<div id="titrehotel"><center><h4><span>Le Lov'nid</span></h4></center></div> 
+				
+				<div id="titrehotel">
+					<div class="retour">
+						<a href=""><i class="fa fa-arrow-circle-left fa-3x" aria-hidden="true"></i></a>
+					</div>	
+					<p style="text-align:center;">
+						<span>Le Lov'nid</span>
+					</p>
+				</div> 
 				<div class="contenu">
-					
-					<section id="slideshow">
-						
-						<div id="slider">
-							<figure>
-								<img src="../../img/Sejourner/lovnid/facadelovnid.jpg" alt>
-								<img src="../../img/Sejourner/lovnid/lov_cow.jpg" alt>
-								<img src="../../img/Sejourner/lovnid/lov_int.jpg" alt>
-								<img src="../../img/Sejourner/lovnid/facadelovnid.jpg" alt>
-								<img src="../../img/Sejourner/lovnid/facadelovnid.jpg" alt>
-							</figure>
-						</div>
+						<section class="containSlide">
+							<div class="divnav slider-prev">
+								<img class="navSlider" src="../../img/fleche.png" alt="">
+							</div>
+
+							<div class="divnav navprev slider-next">
+								<img class="navSlider" src="../../img/fleche.png" alt="">
+							</div>
+
+							<div class="slider">
+								<div class="item" id="img1">
+							    </div>
+
+							    <div class="item" id="img2">
+							    </div>
+
+							    <div class="item" id="img3">
+							    </div>
+							</div>
+						</section>
+
+					<div class="texte"><p>
+						<span>Capacité</span> : 2 personnes</p>
+						​
+						<p>Moulin de la Jarousse<br>
+						24270 Angoisse</p>
+						​
+						<p class="tojustify" style="text-align: justify;">Envie de vous isoler dans une cabane atypique et être en harmonie avec la nature pour profiter de votre bien aimé.e ?
+						Le lov'nid répondra à ce désir!
+						Ce véritable cocon situé dans les arbres comporte un lit double avec un toit panoramique permettant de profiter des étoiles avec votre bien aimé. Nuit agitée garantie !<p>
+						<div class="acheter"><a href="http://www.cabane-en-perigord.com/reservation.html"><p>Acheter</p></a></div>
+					</div>
+
+
 						<div class="Hote-social-icons">
-							<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&width=25&layout=box_count&action=like&size=small&show_faces=false&share=false&height=65&appId" width="65" height="65" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+							<iframe id="facebookLike" src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&width=25&layout=box_count&action=like&size=small&show_faces=false&share=false&height=65&appId" width="65" height="65" style="border:none;overflow:hidden" ></iframe>
 							
 							<ul class="social-icons">
 								<li><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
@@ -101,43 +132,30 @@
 						
 						
 						
-					</section>
-					<div class="texte"><p>
-						<span>Capacité</span> : 2 personnes</p>
-						​
-						<p>Moulin de la Jarousse<br>
-						24270 Angoisse</p>
-						​
-						<p class="tojustify" style="text-align: justify;">Envie de vous isoler dans une cabane atypique et être en harmonie avec la nature pour profiter de votre bien aimé.e ?
-						Le lov'nid répondra à ce désir!
-						Ce véritable cocon situé dans les arbres comporte un lit double avec un toit panoramique permettant de profiter des étoiles avec votre bien aimé. Nuit agitée garantie !<p>
-						</div>
-						
-						
-						
 						
 						<div class="infolieu">
-							<div><p><b>Le lieu:</b></p></div>
-							<div class="sous-titre"><img src="../../img/Sejourner/Icone/Icone_Exterieur.png" style="width: 32px; height: 32px; object-fit: cover;"><span>Exterieur</span>
-								<p>Lac</p>
-								<p>Forêt</p>
+							<div ><p><b>Le lieu:</b></p></div>
+							<div class="sous-titre"><p><img src="../../img/Sejourner/Icone/Icone_Exterieur.png" style="width: 32px; height: 32px; object-fit: cover;" alt><span>Exterieur</span>
+								<p ><img src="../../img/Sejourner/Icone/Icone_valide.png"  style="width: 23px; height: 20px; object-fit: cover;" alt>Lac</p>
+								<p><img src="../../img/Sejourner/Icone/Icone_valide.png" style="width: 23px; height: 20px; object-fit: cover;" alt>Forêt</p>
 							</div>
-							<div class="sous-titre"><img src="../../img/Sejourner/Icone/icone_Activites.png" style="width: 32px; height: 32px; object-fit: cover;"><span>Activités</span>
-								<p><!-- <img src="../../img/Sejourner/Icone/Icone_valide.png" style="width: 23px; height: 23px; object-fit: cover;"> -->Randonée</p>
-								<p>Piscine</p>
-								<p>Parc de Jeux</p>
-								<p>Pêche</p>
-								<p>Massage</p>
+							<div class="sous-titre">
+								<p><img src="../../img/Sejourner/Icone/icone_Activites.png" style="width: 32px; height: 32px; object-fit: cover;" alt><span>Activités</span><p>
+								<p><img src="../../img/Sejourner/Icone/Icone_valide.png" style="width: 23px; height: 20px; object-fit: cover;" alt> Randonée</p>
+								<p><img src="../../img/Sejourner/Icone/Icone_valide.png" style="width: 23px; height: 23px; object-fit: cover;" alt>Piscine</p>
+								<p><img src="../../img/Sejourner/Icone/Icone_valide.png" style="width: 23px; height: 23px; object-fit: cover;" alt>Parc de Jeux</p>
+								<p><img src="../../img/Sejourner/Icone/Icone_valide.png" style="width: 23px; height: 23px; object-fit: cover;" alt>Pêche</p>
+								<p><img src="../../img/Sejourner/Icone/Icone_valide.png" style="width: 23px; height: 23px; object-fit: cover;" alt>Massage</p>
 							</div>
-							<div class="sous-titre"><img src="../../img/Sejourner/Icone/Icone_Musee.png" style="width: 32px; height: 32px; object-fit: cover;"><span>Lieux à proximité</span>
-								<p>Château de Rouffiac</p>
-								<p>Camp Romains</p>
+							<div class="sous-titre"><p><img src="../../img/Sejourner/Icone/Icone_Musee.png" style="width: 32px; height: 32px; object-fit: cover;" alt><span>Lieux à proximité</span></p>
+								<p><img src="../../img/Sejourner/Icone/Icone_valide.png" style="width: 23px; height: 20px; object-fit: cover;" alt>Château de Rouffiac</p>
+								<p><img src="../../img/Sejourner/Icone/Icone_valide.png" style="width: 23px; height: 20px; object-fit: cover;" alt>Camp Romains</p>
 							</div>
 						</div>
 						<div id="carte">
-							<div id='gmap_canvas' style='height:274px;width:470px;'>
+							<div id='gmap_canvas' >
 							</div>
-							<style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
+							
 							
 						</div>
 						<div class="contact">
@@ -153,7 +171,7 @@
 						</div>
 					</div>	
 					</div>
-				</section>
+				
 				<footer>
 					<div class="container">
 						<img src="../../img/logo-twitter.png" alt="">
@@ -168,7 +186,7 @@
 				</footer>
 
 
-				<script type="text/javascript" src="../../js/js.js"></script>
+				<script src="../../js/js.js"></script><script type="text/javascript" src="../../js/slick.min.js"></script>
 				<script>
 					
 					function redim(){
@@ -193,10 +211,28 @@
 					
 					$(document).ready(function(){
 						redim();
+
+
+					    $(".slider").slick({
+					    	slidesToShow: 1,
+					    	slidesToScroll: 1,
+							autoplay: true,
+							autoplaySpeed: 2000,
+		  					speed: 2000,
+		  					arrows: false
+					    });
+
+					    $('.slider-next').click(function(){
+					    	$('.slider').slick('slickNext');
+					    });
+
+					    $('.slider-prev').click(function(){
+					    	$('.slider').slick('slickPrev');
+					    });
 					});
 					
 				</script>
-				<script type='text/javascript'>
+				<script>
 					function init_map(){var myOptions = {zoom:10,center:new google.maps.LatLng(45.43689920000001,1.18415779999998),mapTypeId: google.maps.MapTypeId.ROADMAP};
 						map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
 						marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(45.43689920000001,1.18415779999998)});
