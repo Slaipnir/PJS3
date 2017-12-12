@@ -13,6 +13,8 @@
   padding-top:2%;
 }
 #carte{
+	width:50%;
+	height:274px;
   margin: 5% 0 5% 5%;
 } 
 #gmap_canvas img
@@ -21,7 +23,7 @@ background:none!important}
 
 #gmap_canvas{
 	display:flex;
-	 height:274px;width:470px;
+	 height:100%;width:100%;
 }
 
 /********************************** TEXTE  ***********************************************/
@@ -45,83 +47,26 @@ background:none!important}
   text-align: justify;
 }
 
-/************************************  DIAPORAMA   *********************************************/
-#slideshow{
-  width: 55%;
-  
-  margin-left: 5%;
-}
-div#slider { 
-  /*width: 80%;
-  max-width: 1000px; */
-} 
-
-div#slider figure {
-  position: relative; 
-  width: 500%; /* on a 5 images donc bandes 500% fois plus grande */
-  margin: 0;
-  padding: 0;
-  font-size: 0;
-  text-align: left;
-}
-
-/* Nous devons répartir les images de manière régulière à l’intérieur de la bande. 
-  Le calcul est très simple : Si nous considérons que l’élément figure fait 100% de large, chaque image doit prendre 1/5 de l’espace horizontal :
-100% / 5 = 20% */
-div#slider figure img { 
-  width: 20%; /*100/5images=20*/
-  height: auto; 
-  float: left; 
-}
-
-
-/* Enfin, nous cachons ce qui dépasse (overflow) de la div : */
-div#slider { 
-  /*width: 80%; 
-  max-width: 1000px; */
-  overflow: hidden
-}
-
-@keyframes slidy {
-  0% { left: 0%; }
-  20% { left: 0%; }
-  25% { left: -100%; }
-  45% { left: -100%; }
-  50% { left: -200%; }
-  70% { left: -200%; }
-  75% { left: -300%; }
-  95% { left: -300%; }
-  100% { left: -400%; }
-}
-div#slider figure {
-  position: relative;
-  width: 500%;
-  margin: 0;
-  padding: 0;
-  font-size: 0;
-  left: 0;
-  text-align: left;
-  animation: 30s slidy infinite;
-}
 
 /*********************************** Boite INFO  **********************************************/
 .infolieu{
-width: 90%;
+ width: 90%;
   display:flex;
   border: 2px solid rgba(115, 9, 9, 1);
   background-color: rgba(242, 242, 242, 1);
   border-radius: 0;
   font:normal normal normal 22px/1.4em proxima-n-w01-reg,sans-serif;
   color:#414141;
-  margin-left: auto;
+  margin-left: 5%;
   margin-right: auto;
+  
 }
 .sous-titre{
 	display:flex;
 	flex-direction: column;
 	overflow: hidden;
 	width:25%;
-  margin: 5% auto 0% 0%;
+	margin:  2% auto 0% 0%;
 }
 .sous-titre p{
   font-family: impact,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif;
@@ -145,14 +90,13 @@ width: 90%;
   color:#414141
 }
 .contact{
-		overflow: scroll;
-
-
+	overflow: hidden;
   text-align:center;
   border: 2px solid rgba(115, 9, 9, 1);
   background-color: rgba(242, 242, 242, 1);
   border-radius: 0;
-  width: 30%;
+  width: 25%;
+  height:274px;
   /* display: block; */
   margin: 5% 6%;
 }
@@ -173,9 +117,9 @@ ul.social-icons {
 }
 .social-icons li {
     vertical-align: top;
-    display: inline;
+   display: inline; 
     height: 100px;
-    margin-left: 10%;
+    /* margin-left: 10%; */
 }
 .social-icons a {
     color: #fff;
@@ -209,21 +153,22 @@ ul.social-icons {
     background-color: #e25714;
 }
 
-.acheter{
+.Reserver{
 	display:flex;
 	align-items:center;
 	justify-content:center;
-	    margin-left: auto;
+	margin-left: auto;
     margin-top: 15%;
-	    margin-bottom: 5%;
+	margin-bottom: 5%;
 	border-radius: 10px;
+	overflow:hidden;
 	width:50%;
 	height:50px;
 	background-color:rgba(35, 35, 35, 1);
 	
 
 }
-.acheter p{
+.Reserver p{
 	    font: normal normal normal 16px/1.4em raleway,sans-serif;
 		color:#FFFFFF;
 		}
@@ -263,7 +208,7 @@ margin: 0 14% 0;
   left: 30px;
 }
 .item{
-  height: 500px;
+  height: 400px;
 }
 
 #img1{
