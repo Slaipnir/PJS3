@@ -10,6 +10,10 @@
 		<link rel="stylesheet" type="text/css" href="../../css/style.css">
 		<link rel="stylesheet" type="text/css" href="../../css/slick.css">
 		<link rel="stylesheet" type="text/css" href="../../css/styleDordogneHome.css">
+
+			<!-- TELEPHONE -->
+		<link rel="stylesheet" media="(max-width: 800px)" type="text/css" href="../../css/responsive/menu.css">
+		<link rel="stylesheet" media="(max-width: 800px)" type="text/css" href="../../css/responsive/homepage.css">
 		
 		<link href="https://fonts.googleapis.com/css?family=Clicker+Script|Julius+Sans+One|Open+Sans+Condensed:300,700" rel="stylesheet">
 	</head>
@@ -51,6 +55,18 @@
 				</ul>
 			</nav>
 		</header>
+
+		<!-- ******** 
+			************* MENU RESPONSIVE : MENU BURGER *************
+														********* -->
+			<div id="nav-icon">
+			  <span></span>
+			  <span></span>
+			  <span></span>
+			  <span></span>
+			  <span></span>
+			  <span></span>
+			</div>
 
 		<section class="page">
 				<div class="transparent"></div>
@@ -196,6 +212,7 @@
 				var footerP_height = $('footer p').height();
 
 				$('.page').css('height', window_height);
+
 				$('.titre').css('padding-top', window_height/2 - titre_height/2);
 				$('.sub-menu').css('margin-left', -(ul_width/5));
 
@@ -243,8 +260,28 @@
 			    $('.slider-prev').click(function(){
 			    	$('.slider').slick('slickPrev');
 			    });
-			});
 
+
+				// menu responsible click
+				$('#nav-icon').on('click',function(){
+			        $(this).toggleClass('close');
+			        $('#nav-icon').toggleClass('open');
+			   	}); 
+
+				$('#nav-icon').click( function() {
+
+						if( $('header').is(':visible')) {	
+							// se ferme
+							$('header').css({'display':'none'});
+
+						}
+						else{
+							// s'ouvre
+							$('header').css({'display':'block'});
+						};
+					});
+
+				});
 		</script>
 	</body>
 </html>
