@@ -100,20 +100,13 @@ footer img, footer p{
 ******* TEMPLATE DES PAGES *******
 						   ******/
 
-.titrep h4{
-	padding-top : 50px;
-	padding-bottom : 30px;
-	font-weight: 100;
-	font-family: 'Julius Sans One', sans-serif;
-	text-align : center;
-	font-size: 45px;
-	color: black;
-	
-}
+
+
 span{
 	font-family: 'Clicker script', cursive;
 	font-weight: 700;
-	font-size: 50px;
+	font-size: 45px;
+	font-family: #212121
 }
 .banniere{
 	display: block;
@@ -149,8 +142,46 @@ span{
 	height : 40%;
 }
 
+
+.titrep h4{
+	padding-top : 50px;
+	padding-bottom : 30px;
+	font-weight: 100;
+	font-family: 'Julius Sans One', sans-serif;
+	text-align : center;
+	font-size: 45px;
+	color: #424242;
+	
+}
+
 .texte h1{
+	padding-top : 10px;
+	padding-bottom : 10px;
 	display : block;
 	margin: auto;
+	text-align : center;
+	font-family : 'Open Sans Condensed';
+	font-size: 30px;
+	color: #9E9E9E;
+	font-weight : 400;
 }
+
+.texte p {
+	padding-top : 10px;
+	padding-bottom : 20px;
+}
+
+.button {
+	display : block;
+	margin: auto;
+	text-align : center;
+	color: #40C4FF;
+	border: none;
+    color: white;
+	
+	
+}
+
+
+
 
