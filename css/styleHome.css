@@ -127,7 +127,19 @@ text{
 	fill: #eaeaea;
 }
 
-
 /******
 ******* PAGE 2 CARTE : SVG *******
 		  			       ******/
+
+.dordogneBloc:hover{
+	cursor: pointer;
+}
+.dordogneBloc:hover #dordogne{
+	fill: #730909;
+}
+.dordogneBloc rect{
+	height: 40px;
+}
+.dordogneTexte{
+	display: none;
+}
