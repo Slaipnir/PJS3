@@ -3,6 +3,7 @@
 	<head>
 		<title></title>
 
+		<meta charset="utf-8">
 		<meta name="description" content=""> 
 		<meta name="keywords" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -408,8 +409,8 @@
 								/>
 
 								<svg class="texte dordogneTexte">
-									<rect x="270" y="240"></rect>
-									<text x="220" y="370">Dordogne
+									<rect x="275" y="240"></rect>
+									<text x="280" y="265">Dordogne
 									</text>
 								</svg>
 							</a>
@@ -503,16 +504,25 @@
 
 				$('.aquitaineBloc').mouseover(function(){
 					$('.aquitaine').css({'fill':'#730909'});
-					$('.aquitaineTexte').fadeIn(500);
+					$('.aquitaineTexte').fadeIn(300);
 				})
 				$('.aquitaineBloc').mouseleave(function(){
-					$('.aquitaineTexte').fadeOut(500);
+					$('.aquitaineTexte').fadeOut(300);
 					$('.aquitaine').css({'fill':'#eaeaea'});
+				})
+
+				$('.dordogneBloc').mouseover(function(){
+					$('.dordogne').css({'fill':'#730909'});
+					$('.dordogneTexte').fadeIn(300);
+				})
+				$('.dordogneBloc').mouseleave(function(){
+					$('.dordogneTexte').fadeOut(300);
+					$('.dordogne').css({'fill':'#eaeaea'});
 				})
 
 				$('.aquitaineBloc').click(function(){
 					//window.location = "accueilAquitaine.html";
-					$('.carteFrance').css({'-ms-transform':'scale(8)','-moz-transform':'scale(8)','-webkit-transform':'scale(8)', 'transition': 'all 700ms ease-in'});
+					$('.carteFrance').css({'transform-origin': '300px 54%', '-ms-transform':'scale(8)','-moz-transform':'scale(8)','-webkit-transform':'scale(8)', 'transition': 'all 700ms ease-in'});
 					
 					
 					$('.carteFrance').fadeOut(700, function(){
@@ -522,7 +532,11 @@
 					});
 					$('.contain p').fadeOut(400);
 					
-					
+				});
+
+				$('.dordogneBloc').click(function(){
+					//window.location = "accueilAquitaine.html";
+					$('.carteAquitaine').css({'-ms-transform':'scale(8)','-moz-transform':'scale(8)','-webkit-transform':'scale(8)', 'transition': 'all 700ms ease-in'});
 				});
 			});
 		</script>

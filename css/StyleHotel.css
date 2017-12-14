@@ -4,6 +4,7 @@
 
 .contenu{
   display: flex;
+  
   width: 80%;
   padding-top:3%; 
   margin: auto;
@@ -15,6 +16,7 @@
 #carte{
 	width:50%;
 	height:274px;
+	 -moz-margin-top:25px;
   margin: 5% 0 5% 5%;
 } 
 #gmap_canvas img
@@ -68,9 +70,9 @@ background:none!important}
 	width:25%;
 	margin:  2% auto 0% 0%;
 }
-.sous-titre p{
-  font-family: impact,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif;
-  font-size:15px;
+.infotxt{
+  font-family: open sans condensed,sans-serif;
+  font-size:20px;
   color: #414141;
 }
 .contact span{
@@ -97,7 +99,6 @@ background:none!important}
   border-radius: 0;
   width: 25%;
   height:274px;
-  /* display: block; */
   margin: 5% 6%;
 }
 
