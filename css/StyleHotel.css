@@ -1,3 +1,5 @@
+/********************************** ENSEMBLE ***********************************************/
+
 .sub-menu a{
   color: #730909;
 }
@@ -10,31 +12,49 @@
   margin: auto;
   flex-wrap: wrap;
 }
-#titrehotel{
+
+.titrehotel{
   padding-top:2%;
 }
+
+.retour{    
+margin: 0 14% 0;
+} 
+
+.titretxt{
+  text-align: center;
+  }
+
+.retour a{
+    text-decoration: none;
+    color: #677179;
+}
+
+/********************************** CARTE ***********************************************/
+
 #carte{
 	width:50%;
 	height:274px;
-	 -moz-margin-top:25px;
   margin: 5% 0 5% 5%;
 } 
-#gmap_canvas img
-{max-width:none!important;
-background:none!important}
+
+#gmap_canvas img{
+max-width:none!important;
+background:none!important
+}
 
 #gmap_canvas{
-	display:flex;
 	 height:100%;width:100%;
 }
 
-/********************************** TEXTE  ***********************************************/
+/********************************** TEXTE Detail lieu  ***********************************************/
 .texte{
   width: 30%;
   margin-left: 5%;
   margin-top:2%;
   text-align: justify;
 }
+
 .texte span{
   font-weight: bold;font-size: 23px;
   font-family: 'Julius Sans One', sans-serif;
@@ -45,9 +65,11 @@ background:none!important}
   font-size: 20px;
   text-align: center;
 }
-.tojustify{
+
+.texte .txtjustify{
   text-align: justify;
 }
+
 
 
 /*********************************** Boite INFO  **********************************************/
@@ -61,8 +83,15 @@ background:none!important}
   color:#414141;
   margin-left: 5%;
   margin-right: auto;
-  
 }
+
+.infolieu span{
+  Font-family: 'Clicker script', cursive;
+  font-weight: 700;
+  font-size: 30px;
+  color:#414141
+}
+
 .sous-titre{
 	display:flex;
 	flex-direction: column;
@@ -70,36 +99,48 @@ background:none!important}
 	width:25%;
 	margin:  2% auto 0% 0%;
 }
+
 .infotxt{
   font-family: open sans condensed,sans-serif;
   font-size:20px;
   color: #414141;
 }
+
+.infotxt img{
+  width: 23px;
+  height: 20px;
+  object-fit: cover;
+}
+
+.sous-titretxt img{
+ width: 32px;
+  height: 32px;
+}
+
+/********************************** BOITE CONTACT ***********************************************/
+
+.contact{
+  overflow: hidden;
+  border: 2px solid rgba(115, 9, 9, 1);
+  background-color: rgba(242, 242, 242, 1);
+  border-radius: 0;
+  width: 30%;
+  height:200px;
+  margin: 5% 6%;
+}
+
 .contact span{
   font-weight: bold;font-size: 23px;
   font-family: wfont_3d03d5_8ec9428e2509499f86a04c480e9dde48,wf_8ec9428e2509499f86a04c480,orig_julius_sans_one;
-
+ 
 }
 .contact p{
   font-family: open sans condensed,sans-serif;
   font-size: 20px;
-  text-align: justify;
+  text-align: center;
 }
-.infolieu span{
-  Font-family: 'Clicker script', cursive;
-  font-weight: 700;
-  font-size: 30px;
-  color:#414141
-}
-.contact{
-	overflow: hidden;
-  text-align:center;
-  border: 2px solid rgba(115, 9, 9, 1);
-  background-color: rgba(242, 242, 242, 1);
-  border-radius: 0;
-  width: 25%;
-  height:274px;
-  margin: 5% 6%;
+.contact a{
+  color: #677179;
 }
 
 /************************************  ICONE SOCIAL  *********************************************/
@@ -154,35 +195,30 @@ ul.social-icons {
     background-color: #e25714;
 }
 
+/************************************  RESERVER  *********************************************/
+
+
 .Reserver{
 	display:flex;
 	align-items:center;
 	justify-content:center;
 	margin-left: auto;
-    margin-top: 15%;
+  margin-top: 15%;
 	margin-bottom: 5%;
 	border-radius: 10px;
 	overflow:hidden;
 	width:50%;
 	height:50px;
 	background-color:rgba(35, 35, 35, 1);
-	
-
 }
+
 .Reserver p{
 	    font: normal normal normal 16px/1.4em raleway,sans-serif;
 		color:#FFFFFF;
-		}
-.retour{
-		
-margin: 0 14% 0;
-} 
+}
 
-
-/******
-******* PAGE3 : CAROUSEL D IMAGES *******
-                        ******/
-
+/******* PAGE3 : CAROUSEL D IMAGES *******/
+                        
 .containSlide{
   position: relative;
   width: 55%;
