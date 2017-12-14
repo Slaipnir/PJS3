@@ -3,6 +3,7 @@
 	font-family: 'Julius Sans One', sans-serif;
 	text-align: center;
 	font-size: 85px;
+    color: #000;
 }
 span{
 	font-family: 'Clicker script', cursive;
@@ -55,6 +56,7 @@ span{
 	margin: auto;
 	width: 65%;
 	justify-content: center;
+	display: flex;
 }
 .page2 .info{
 	flex-grow: 1;
@@ -88,8 +90,62 @@ span{
 ******* PAGE3 : CAROUSEL D IMAGES *******
 				   		       	  ******/
 
-.carousel{
-	background-color: red;
+.containSlide{
+	position: relative;
+}
+.containSlide a{
+	font-family: 'Julius Sans One', sans-serif;
+	font-weight: 100;
+	font-size: 55px;
+	color: #ffffff;
+	text-decoration: none;
+	text-align: center;
+}
+.containSlide span{
+	font-size: 70px;
+	font-weight: 700;
+}
+.divnav{
+	position: absolute;
+	top: 50%;
+	z-index: 999;
+	width: 50px;
+	right: 50px;
+}
+.navSlider{
+	width: 50%;
+    display: block;
+    margin: auto;
+}
+.navSlider:hover{
+	cursor: pointer;
+}
+.slider-prev{
+	transform: rotate(180deg);
+	left: 50px;
+}
+.item{
+	height: 500px;
+}
+.item a{
+	display: block;
+	height: inherit;
+	width: 100%;
+}
+#halloween{
+	background: url(../img/halloween.jpg) no-repeat bottom;
+}
+#halloween p{
+	padding-top: 15%;
+}
+#infospratiques{
+	background: url(../img/infoprat.png) no-repeat center;
+}
+#gastronomie{
+	background: url(../img/manger.jpg) no-repeat center;
+}
+#sweetdreams{
+	background: url(../img/dormir.jpg) no-repeat center;
 }
 
 /******

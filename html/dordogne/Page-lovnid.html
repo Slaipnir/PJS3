@@ -1,132 +1,194 @@
 <!doctype html>
 <html>
 	<head>
-		<title></title>
-		
+		<title>Lov'Nid</title>
+		  <meta charset="utf-8">
+
 		<meta name="description" content=""> 
 		<meta name="keywords" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		
 		<!-- structure commune aux pages /!\ ne pas toucher -->
 		<link rel="stylesheet" type="text/css" href="../../css/stylePage.css">
+		<link rel="stylesheet" type="text/css" href="../../css/slick.css">
 		<!-- footer & menu -->
 		<link rel="stylesheet" type="text/css" href="../../css/style.css">
-		
+		<link rel="stylesheet" type="text/css" href="../../css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="../../css/styleHotel.css">
+
+			<!-- TELEPHONE -->
+		<link rel="stylesheet" media="(max-width: 800px)" type="text/css" href="../../css/responsive/menu.css">
+		<link rel="stylesheet" media="(max-width: 800px)" type="text/css" href="../../css/responsive/StyleHotelResp.css">
+
 		
-		<link href="https://fonts.googleapis.com/css?family=Clicker+Script|Julius+Sans+One|Open+Sans+Condensed:300,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Clicker+Script%7CJulius+Sans+One%7COpen+Sans+Condensed:300,700" rel="stylesheet">
 		<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
 		
 		
 	</head>
 	
 	<body>
+		
 		<img src="../../img/logo.jpg" alt="" id="logo">
 		
-		<div class="container">
-			<li>
-				<a href="../../index.html" title="">Accueil</a>
-			</li>
-			<li class="activeli">
-				<a href="" title="">La Dordogne</a>
-			</li>
-			<li>
-				<a href="" title="">Sortir</a>
-			</li>
-			<li>
-				<a href="" title="">Gastronomie</a>
-			</li>
-			<li id="sur-menu">
-				<a href="" title="" id="sur-menu-a">Séjourner</a>
-				
-				<ul class="sub-menu">
+		<header>
+			<nav class="container">
+				<ul>
 					<li>
-						<a href="" title="">En harmonie avec la nature</a>
+						<a href="../../index.html" title="">Accueil</a>
 					</li>
 					<li>
-						<a href="" title="">Les châteaux</a>
+						<a href="" title="">La Dordogne</a>
+					</li>
+					<li>
+						<a href="" title="">Sortir</a>
+					</li>
+					<li>
+						<a href="" title="">Gastronomie</a>
+					</li>
+					<li class="activeli" id="sur-menu">
+						<a href="" title="" id="sur-menu-a">Séjourner</a>
+
+						<ul class="sub-menu">
+							<li>
+								<a href="" title="">En harmonie avec la nature</a>
+							</li>
+							<li>
+								<a href="" title="">Les châteaux</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="" title="">Informations</a>
 					</li>
 				</ul>
-			</li>
-			<li>
-				<a href="" title="">Informations</a>
-			</li>
-		</div>
+			</nav>
+		</header>
+		
+		<!-- ******** 
+			************* MENU RESPONSIVE : MENU BURGER *************
+														********* -->
+			<div id="nav-icon">
+			  <span></span>
+			  <span></span>
+			  <span></span>
+			  <span></span>
+			  <span></span>
+			  <span></span>
+			</div>
+		
 		
 		<section>
 			<div class="banniere">
 				<div class="titre">
-					<h1>titre : <span>blablabla</span> </h1>
+					<h1>Lov'nid <span> le romantisme</span> </h1>
 					<div id="ligne"></div>
 				</div>
 			</div>
 			
 		</section>
-		<section>
 			
 			<div class="containPage">
-				<div id="titrehotel"><center><h4><span>Le Lov'nid</span></h4></center></div> 
-				<div class="premcont">
-					
-					<section id="slideshow">
-						<div class="contain">
-							<div id="slider">
-								<figure>
-									<img src="../../img/Sejourner/lovnid/facadelovnid.jpg" alt>
-									<img src="../../img/Sejourner/lovnid/facadelovnid.jpg" alt>
-									<img src="../../img/Sejourner/lovnid/facadelovnid.jpg" alt>
-									<img src="../../img/Sejourner/lovnid/facadelovnid.jpg" alt>
-									<img src="../../img/Sejourner/lovnid/facadelovnid.jpg" alt>
-								</figure>
-							</div>
-							
-							<span id="timeline"></span>
-							
-							
-						</div>
-					</section>
-					<div class="texte"><p>
-						Vous souhaitez vivre un week-end inoubliable tout en profitant du confort d’un château ? Ne cherchez pas plus loin, les châteaux hautefort sont fait pour vous !
-						Ces cabanes de bois s’inspire de l’architecture d’un château tout étant perché à plusieurs mètre de hauteur assurant douceur et tranquillité.
-						Bien entendu ces cabanes sont équipés du nécessaire afin que la détente  soit le maître mot de votre séjour.
-						Vous retrouverez dans la plupart des cabanes un des spa situé sur la terrasse permettant de profiter d’une vue exceptionnel sur tout le domaine.<p>
-						</div>
+				
+				<div id="titrehotel">
+					<div class="retour">
+						<a href=""><i class="fa fa-arrow-circle-left fa-3x" aria-hidden="true"></i></a>
 					</div>	
-					<div class="deuxiemecont">
-						<div class="infolieu"><p><b>Le lieu:</b></p>
-						<div><span>Exterieur</span>
-						<p>Lac</p>
-						<p>Forêt</p>
+					<p style="text-align:center;">
+						<span>Le Lov'nid</span>
+					</p>
+				</div> 
+				<div class="contenu">
+						<section class="containSlide">
+							<div class="divnav slider-prev">
+								<img class="navSlider" src="../../img/fleche.png" alt="">
+							</div>
+
+							<div class="divnav navprev slider-next">
+								<img class="navSlider" src="../../img/fleche.png" alt="">
+							</div>
+
+							<div class="slider">
+								<div class="item" id="img1">
+							    </div>
+
+							    <div class="item" id="img2">
+							    </div>
+
+							    <div class="item" id="img3">
+							    </div>
+							</div>
+						</section>
+
+					<div class="texte"><p>
+						<span>Capacité</span> : 2 personnes</p>
+						​
+						<p>Moulin de la Jarousse<br>
+						24270 Angoisse</p>
+						​
+						<p class="tojustify" style="text-align: justify;">Envie de vous isoler dans une cabane atypique et être en harmonie avec la nature pour profiter de votre bien aimé.e ?
+						Le lov'nid répondra à ce désir!
+						Ce véritable cocon situé dans les arbres comporte un lit double avec un toit panoramique permettant de profiter des étoiles avec votre bien aimé. Nuit agitée garantie !<p>
+						<div class="Reserver"><a href="http://www.cabane-en-perigord.com/reservation.html"><p>Réserver</p></a></div>
+					</div>
+
+
+						<div class="Hote-social-icons">
+							<iframe id="facebookLike" src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&width=25&layout=box_count&action=like&size=small&show_faces=false&share=false&height=65&appId" width="65" height="65" style="border:none;overflow:hidden" ></iframe>
+							
+							<ul class="social-icons">
+								<li><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+								<!-- <li><a href="" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+									<li><a href="" class="social-icon"> <i class="fa fa-rss"></i></a></li>
+									<li><a href="" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+								<li><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></li> -->
+								<li><a href="" class="social-icon"> <i class="fa fa-google-plus"></i></a></li>
+							</ul>
 						</div>
-						<div><span>Activités</span>
-						<p>Randonée</p>
-						<p>Piscine</p>
-						<p>Parc de Jeux</p>
-						<p>Pêche</p>
-						<p>Massage</p>
-						</div>
-						<div><span>Lieux à proximité</span>
-						<p>Château de Rouffiac</p>
-						<p>Camp Romains</p>
-						</div>
+						<span id="timeline"></span>
+						
+						
+						
+						
+						<div class="infolieu">
+							<div ><p><b>Le lieu:</b></p></div>
+							<div class="sous-titre"><p><img src="../../img/Sejourner/Icone/Icone_Exterieur.png" style="width: 32px; height: 32px; object-fit: cover;" alt><span>Exterieur</span>
+								<p ><img src="../../img/Sejourner/Icone/Icone_valide.png"  style="width: 23px; height: 20px; object-fit: cover;" alt>Lac</p>
+								<p><img src="../../img/Sejourner/Icone/Icone_valide.png" style="width: 23px; height: 20px; object-fit: cover;" alt>Forêt</p>
+							</div>
+							<div class="sous-titre">
+								<p><img src="../../img/Sejourner/Icone/icone_Activites.png" style="width: 32px; height: 32px; object-fit: cover;" alt><span>Activités</span><p>
+								<p><img src="../../img/Sejourner/Icone/Icone_valide.png" style="width: 23px; height: 20px; object-fit: cover;" alt> Randonée</p>
+								<p><img src="../../img/Sejourner/Icone/Icone_valide.png" style="width: 23px; height: 23px; object-fit: cover;" alt>Piscine</p>
+								<p><img src="../../img/Sejourner/Icone/Icone_valide.png" style="width: 23px; height: 23px; object-fit: cover;" alt>Parc de Jeux</p>
+								<p><img src="../../img/Sejourner/Icone/Icone_valide.png" style="width: 23px; height: 23px; object-fit: cover;" alt>Pêche</p>
+								<p><img src="../../img/Sejourner/Icone/Icone_valide.png" style="width: 23px; height: 23px; object-fit: cover;" alt>Massage</p>
+							</div>
+							<div class="sous-titre"><p><img src="../../img/Sejourner/Icone/Icone_Musee.png" style="width: 32px; height: 32px; object-fit: cover;" alt><span>Lieux à proximité</span></p>
+								<p><img src="../../img/Sejourner/Icone/Icone_valide.png" style="width: 23px; height: 20px; object-fit: cover;" alt>Château de Rouffiac</p>
+								<p><img src="../../img/Sejourner/Icone/Icone_valide.png" style="width: 23px; height: 20px; object-fit: cover;" alt>Camp Romains</p>
+							</div>
 						</div>
 						<div id="carte">
-							
-							<div style='overflow:hidden;height:274px;width:470px;'>
-								<div id='gmap_canvas' style='height:274px;width:470px;'>
-								</div>
-								<div><small><a href="https://embedgooglemaps.com/fr/">emg.com/fr</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
+							<div id='gmap_canvas' >
 							</div>
 							
 							
 						</div>
-					<div class="contact"><br><p >CONTACT :</p><br><br>
-						<p>Mail: <a href="mailto:"> grand-vignoble@orange.fr </a></p>
-							<p >TÉL. : 05 53 52 37 91</p>
-						<p >Site web:  <a href="http://www.cabane-en-perigord.com/Chambre-perchee.html"> Le Manoir du Grand Vignoble</a></p></div>
+						<div class="contact">
+							<br><p style="text-align:center;"><span>CONTACT :</span>
+							</p><br><br>
+							<p style="text-align:center;">Mail:
+								<a href="mailto:"> grand-vignoble@orange.fr </a>
+							</p>
+							<p style="text-align:center;" >TÉL. : 05 53 52 37 91</p>
+							<p style="text-align:center;" >Site web: 
+								<a href="http://www.cabane-en-perigord.com/Chambre-perchee.html"> Le Manoir du Grand Vignoble</a>
+							</p>
+						</div>
+					</div>	
 					</div>
-					</div>
-				</section>
+				
 				<footer>
 					<div class="container">
 						<img src="../../img/logo-twitter.png" alt="">
@@ -139,8 +201,9 @@
 						</p>
 					</div>
 				</footer>
-				
-				<script type="text/javascript" src="../../js/js.js"></script>
+
+
+				<script src="../../js/js.js"></script><script type="text/javascript" src="../../js/slick.min.js"></script>
 				<script>
 					
 					function redim(){
@@ -165,10 +228,49 @@
 					
 					$(document).ready(function(){
 						redim();
+
+
+					    $(".slider").slick({
+					    	slidesToShow: 1,
+					    	slidesToScroll: 1,
+							autoplay: true,
+							autoplaySpeed: 2000,
+		  					speed: 2000,
+		  					arrows: false
+					    });
+
+					    $('.slider-next').click(function(){
+					    	$('.slider').slick('slickNext');
+					    });
+
+					    $('.slider-prev').click(function(){
+					    	$('.slider').slick('slickPrev');
+					    });
+
+					    
+				// menu responsible click
+				$('#nav-icon').on('click',function(){
+			        $(this).toggleClass('close');
+			        $('#nav-icon').toggleClass('open');
+			   	}); 
+
+				$('#nav-icon').click( function() {
+
+						if( $('header').is(':visible')) {	
+							// se ferme
+							$('header').css({'display':'none'});
+
+						}
+						else{
+							// s'ouvre
+							$('header').css({'display':'block'});
+						};
+					});
+
 					});
 					
 				</script>
-				<script type='text/javascript'>
+				<script>
 					function init_map(){var myOptions = {zoom:10,center:new google.maps.LatLng(45.43689920000001,1.18415779999998),mapTypeId: google.maps.MapTypeId.ROADMAP};
 						map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
 						marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(45.43689920000001,1.18415779999998)});
@@ -177,4 +279,4 @@
 					}google.maps.event.addDomListener(window, 'load', init_map);
 				</script>
 			</body>
-		</html>																									
+		</html>																																

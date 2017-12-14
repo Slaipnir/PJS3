@@ -30,6 +30,43 @@ span{
 
 
 /******
+******* PAGE 1 CARTE : SVG *******
+		  			       ******/
+
+.aquitaineBloc:hover{
+	cursor: pointer;
+}
+.contain{
+	display: block;
+	overflow: hidden;
+}
+svg{
+	width: 50%;
+	display: block;
+	margin: auto;
+}
+p, text{
+	text-align: center;
+	font-size: 15px;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.pageAquitaine{
+	display: none;
+}
+rect{
+	width: 13%;
+	height: 50px;
+	fill: #fff;
+}
+text{
+	font-size: 17px;
+}
+.aquitaineTexte{
+	display: none;
+}
+
+/******
 ******* PAGE 2 : menu des departements *******
 									   ******/
 
@@ -80,3 +117,17 @@ span{
 .dep img{
 	width: 75%;
 }
+.carteAquitaine .region{
+	fill:#FBFBFA;
+	stroke:#730909;
+	stroke-width: 1.5;
+}
+
+#dordogne{
+	fill: #eaeaea;
+}
+
+
+/******
+******* PAGE 2 CARTE : SVG *******
+		  			       ******/

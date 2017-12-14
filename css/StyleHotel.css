@@ -1,101 +1,225 @@
-.premcont, .deuxiemecont{
-	display: flex;
+.sub-menu a{
+  color: #730909;
+}
+
+.contenu{
+  display: flex;
   width: 80%;
-	padding-top:3%; 
+  padding-top:3%; 
   margin: auto;
   flex-wrap: wrap;
 }
-.contain{
-	
-	/*margin:auto;*/
-}
-.texte{
-	width: 35%;
-	margin-left:3%;
-	margin-top:2%;
-  text-align: justify;
-}
 #titrehotel{
-	padding-top:2%;
-}
-
-#slideshow{
-  width: 50%;
-  
-}
-div#slider { 
-	/*width: 80%;
-  max-width: 1000px; */
-} 
-
-div#slider figure {
-  position: relative; 
-  width: 500%; /* on a 5 images donc bandes 500% fois plus grande */
-  margin: 0;
-  padding: 0;
-  font-size: 0;
-  text-align: left;
-}
-
-/* Nous devons répartir les images de manière régulière à l’intérieur de la bande. 
-	Le calcul est très simple : Si nous considérons que l’élément figure fait 100% de large, chaque image doit prendre 1/5 de l’espace horizontal :
-100% / 5 = 20% */
-div#slider figure img { 
-	width: 20%; /*100/5images=20*/
-	height: auto; 
-	float: left; 
-}
-
-
-/* Enfin, nous cachons ce qui dépasse (overflow) de la div : */
-div#slider { 
-	/*width: 80%; 
-	max-width: 1000px; */
-	overflow: hidden
-}
-
-@keyframes slidy {
-  0% { left: 0%; }
-  20% { left: 0%; }
-  25% { left: -100%; }
-  45% { left: -100%; }
-  50% { left: -200%; }
-  70% { left: -200%; }
-  75% { left: -300%; }
-  95% { left: -300%; }
-  100% { left: -400%; }
-}
-div#slider figure {
-  position: relative;
-  width: 500%;
-  margin: 0;
-  padding: 0;
-  font-size: 0;
-  left: 0;
-  text-align: left;
-  animation: 30s slidy infinite;
-}
-
-/*********************************************************************************/
-.infolieu{
-  width: 100%;
-display:flex;
-margin:auto;	
--moz-border-radius:1px;
--webkit-border-radius:1px;
-border-radius:1px;
-border: 2px solid #cb0000;
-}
-.contact{
-	text-align:center;
-  -moz-border-radius:1px;
-  -webkit-border-radius:1px;
-  border-radius:1px;
-  border: 2px solid #cb0000;
-    width: 35%;
-    display: block;
-    margin: 5% auto;
+  padding-top:2%;
 }
 #carte{
-	margin-top:5%;
-}	
+	width:50%;
+	height:274px;
+  margin: 5% 0 5% 5%;
+} 
+#gmap_canvas img
+{max-width:none!important;
+background:none!important}
+
+#gmap_canvas{
+	display:flex;
+	 height:100%;width:100%;
+}
+
+/********************************** TEXTE  ***********************************************/
+.texte{
+  width: 30%;
+  margin-left: 5%;
+  margin-top:2%;
+  text-align: justify;
+}
+.texte span{
+  font-weight: bold;font-size: 23px;
+  font-family: 'Julius Sans One', sans-serif;
+
+}
+.texte p{
+  font-family: open sans condensed,sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+.tojustify{
+  text-align: justify;
+}
+
+
+/*********************************** Boite INFO  **********************************************/
+.infolieu{
+ width: 90%;
+  display:flex;
+  border: 2px solid rgba(115, 9, 9, 1);
+  background-color: rgba(242, 242, 242, 1);
+  border-radius: 0;
+  font:normal normal normal 22px/1.4em proxima-n-w01-reg,sans-serif;
+  color:#414141;
+  margin-left: 5%;
+  margin-right: auto;
+  
+}
+.sous-titre{
+	display:flex;
+	flex-direction: column;
+	overflow: hidden;
+	width:25%;
+	margin:  2% auto 0% 0%;
+}
+.sous-titre p{
+  font-family: impact,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif;
+  font-size:15px;
+  color: #414141;
+}
+.contact span{
+  font-weight: bold;font-size: 23px;
+  font-family: wfont_3d03d5_8ec9428e2509499f86a04c480e9dde48,wf_8ec9428e2509499f86a04c480,orig_julius_sans_one;
+
+}
+.contact p{
+  font-family: open sans condensed,sans-serif;
+  font-size: 20px;
+  text-align: justify;
+}
+.infolieu span{
+  Font-family: 'Clicker script', cursive;
+  font-weight: 700;
+  font-size: 30px;
+  color:#414141
+}
+.contact{
+	overflow: hidden;
+  text-align:center;
+  border: 2px solid rgba(115, 9, 9, 1);
+  background-color: rgba(242, 242, 242, 1);
+  border-radius: 0;
+  width: 25%;
+  height:274px;
+  /* display: block; */
+  margin: 5% 6%;
+}
+
+/************************************  ICONE SOCIAL  *********************************************/
+
+.Hote-social-icons {
+    width: 50%;
+    display:flex;
+  flex-wrap:wrap;
+    margin: 3% auto auto 5%;
+}
+ul.social-icons {
+    margin-top: 10px;
+}
+.social-icons li:not(#sur-menu):hover{
+  background-color: #eaeaea;
+}
+.social-icons li {
+    vertical-align: top;
+   display: inline; 
+    height: 100px;
+    /* margin-left: 10%; */
+}
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+}
+.fa-facebook,.fa-twitter, .fa-rss,.fa-youtube, .fa-linkedin,.fa-google-plus {
+    padding: 8px 10px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-facebook:hover {
+    background-color: #3d5b99;
+}
+.fa-twitter:hover {
+    background-color: #00aced;
+}
+.fa-rss:hover {
+    background-color: #eb8231;
+}
+.fa-youtube:hover {
+    background-color: #e64a41;
+}
+.fa-linkedin:hover {
+    background-color: #0073a4;
+}
+.fa-google-plus:hover {
+    background-color: #e25714;
+}
+
+.Reserver{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	margin-left: auto;
+    margin-top: 15%;
+	margin-bottom: 5%;
+	border-radius: 10px;
+	overflow:hidden;
+	width:50%;
+	height:50px;
+	background-color:rgba(35, 35, 35, 1);
+	
+
+}
+.Reserver p{
+	    font: normal normal normal 16px/1.4em raleway,sans-serif;
+		color:#FFFFFF;
+		}
+.retour{
+		
+margin: 0 14% 0;
+} 
+
+
+/******
+******* PAGE3 : CAROUSEL D IMAGES *******
+                        ******/
+
+.containSlide{
+  position: relative;
+  width: 55%;
+  float: left;
+  margin-left: 5%;
+}
+.divnav{
+  position: absolute;
+  top: 50%;
+  z-index: 999;
+  width: 50px;
+  right: 30px;
+}
+.navSlider{
+  width: 50%;
+    display: block;
+    margin: auto;
+}
+.navSlider:hover{
+  cursor: pointer;
+}
+.slider-prev{
+  transform: rotate(180deg);
+  left: 30px;
+}
+.item{
+  height: 400px;
+}
+
+#img1{
+  background: url(../img/Sejourner/lovnid/facadelovnid.jpg) no-repeat bottom;
+  background-size: cover;
+}
+#img2{
+  background: url(../img/Sejourner/lovnid/lov_cow.jpg) no-repeat bottom;
+  background-size: cover;
+}
+#img3{
+  background: url(../img/Sejourner/lovnid/lov_int.jpg) no-repeat bottom;
+  background-size: cover;
+}

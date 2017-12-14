@@ -3,7 +3,6 @@
 	padding: 0;
 }
 .container{
-	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
 	width: 55%;
@@ -12,6 +11,9 @@
 	align-items: center;
 	margin: 3% 0 3% 0;
 	margin-left: 27%;
+}
+nav ul{
+	display: flex;
 }
 li{
 	list-style: none;
@@ -83,6 +85,7 @@ footer p {
 }
 footer .container{
 	width: auto;
+	display: flex;
 	border: none;
 	margin: 0;
 	flex-direction: row-reverse;
@@ -95,10 +98,6 @@ footer img{
 footer img, footer p{
 	margin-top: 30px;
 }
-<<<<<<< HEAD
-=======
-
-
 /******
 ******* TEMPLATE DES PAGES *******
 						   ******/
@@ -132,4 +131,3 @@ span{
 .containPage{
 	background-color: #EAEAEA;
 }
->>>>>>> 9f770bc2a93d9236587c8b4efc018c975ee028bc
