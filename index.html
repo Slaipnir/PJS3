@@ -409,8 +409,8 @@
 								/>
 
 								<svg class="texte dordogneTexte">
-									<rect x="270" y="240"></rect>
-									<text x="275" y="265">Dordogne
+									<rect x="275" y="240"></rect>
+									<text x="280" y="265">Dordogne
 									</text>
 								</svg>
 							</a>
@@ -522,7 +522,7 @@
 
 				$('.aquitaineBloc').click(function(){
 					//window.location = "accueilAquitaine.html";
-					$('.carteFrance').css({'-ms-transform':'scale(8)','-moz-transform':'scale(8)','-webkit-transform':'scale(8)', 'transition': 'all 700ms ease-in'});
+					$('.carteFrance').css({'transform-origin': '300px 54%', '-ms-transform':'scale(8)','-moz-transform':'scale(8)','-webkit-transform':'scale(8)', 'transition': 'all 700ms ease-in'});
 					
 					
 					$('.carteFrance').fadeOut(700, function(){
