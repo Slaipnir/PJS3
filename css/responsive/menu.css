@@ -116,9 +116,9 @@ nav ul{
 }
 
 .container{
-  width: 70%;
+  width: 80%;
   background: #fff;
-  margin-left: calc(50% - 35%);
+  margin-left: calc(50% - 40%);
 }
 nav li{
   padding-top: 25px;

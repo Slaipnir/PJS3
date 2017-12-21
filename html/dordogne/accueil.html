@@ -226,6 +226,10 @@
 
 				$('.page4 .transparent').css('left', visite_width/2 -transp_height/2-2);
 				$('.page4 .transparent').css('top', visite_height/2 -transp_height/2);
+
+
+				var header_height = $('header').height();
+				$('header').css('margin-top', window_height/2 - header_height/2);
 			}
 
 			$(document).ready(function(){
