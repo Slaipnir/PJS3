@@ -119,6 +119,7 @@ nav ul{
   width: 80%;
   background: #fff;
   margin-left: calc(50% - 40%);
+  border: 1px solid #730909;
 }
 nav li{
   padding-top: 25px;
