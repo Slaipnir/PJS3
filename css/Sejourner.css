@@ -42,7 +42,7 @@
 	width: 100%;
 	height: 300px;
 	background: url('../img/Sejourner/chambre.jpg') no-repeat center;
-	 background-size: 100%;
+	background-size: cover;
 }
 
 .transparent{

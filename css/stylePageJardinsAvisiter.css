@@ -1,0 +1,204 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	width: 55%;
+	border-top: 1px solid #730909;
+	border-bottom: 1px solid #730909;
+	align-items: center;
+	margin: 3% 0 3% 0;
+	margin-left: 27%;
+}
+li{
+	list-style: none;
+	text-align: center;
+	padding: 10px 0% 10px 0%;
+	align-self: auto;
+	flex-grow: 2;
+}
+li:not(#sur-menu):hover{
+	background-color: #730909;
+}
+li:not(#sur-menu):hover a{
+	color: #fff;
+}
+.container a{
+	color: #730909;
+	font-family: 'Julius Sans One', sans-serif;
+	font-size: 13px;
+	text-decoration: none;
+}
+#sur-menu{
+	position: relative;
+}
+#sur-menu:hover .sub-menu{
+	display: block;
+}
+#sur-menu:hover{
+	background-color: #730909;
+}
+#sur-menu:hover #sur-menu-a{
+	color: #fff;
+}
+.sub-menu{
+	position: absolute;
+	z-index: 500;
+	margin-top: 10%;
+    width: 150%;
+	display: none;
+}
+.sub-menu li{
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: #fff;
+}
+.activeli{
+	background-color: #730909;
+}
+.activeli a{
+	color: #ffffff;
+}
+#logo{
+	position: absolute;
+	width: 12%;
+	margin-left: 8%;
+}
+
+
+/******
+******* FOOTER *******
+			   ******/
+
+footer{
+	background-color: #ffffff;
+	width: 100%;
+	height: 60px;
+}
+footer p {
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+footer .container{
+	width: auto;
+	border: none;
+	margin: 0;
+	flex-direction: row-reverse;
+	margin-right: 9%;
+}
+footer img{
+	width: 2%;
+	margin-left: 1%;
+}
+footer img, footer p{
+	margin-top: 30px;
+}
+
+/******
+******* TEMPLATE DES PAGES *******
+						   ******/
+
+
+
+
+.banniere{
+	display: block;
+	overflow: hidden;
+	width: 100%;
+	height: 400px;
+	background: url(../img/Sortir-Jardins/fondJardins02.jpg) no-repeat center;
+	background-size: cover;
+}
+#ligne{
+	width: 20%;
+	height: 0;
+	border-bottom: 2px solid #ffffff;
+	margin-left: calc(100%/2 - 10%);
+}
+
+.containPage{
+	background-color: #EAEAEA;
+	height : 1%;
+}
+
+.containPage p{
+	text-align : justify;
+	width : 50%;
+	margin : auto;
+	font-family : 'Open Sans Condensed';
+	font-size : 20px;
+}
+
+.imageChateaux img{
+	display: block;
+    margin: auto;
+	width : 30%;
+	height : 40%;
+}
+
+.titre h1{
+	display : block;
+	text-align : center;
+	color : white;
+	font-size : 60px;
+	font-family: 'Julius Sans One', serif;
+}
+
+.titre span{
+	font-family: 'Clicker script', cursive;
+	font-size : 60px;
+	
+	
+}	
+	
+.titrep h4{
+	padding-top : 50px;
+	padding-bottom : 30px;
+	text-align : center;	
+	color: #424242;
+	font-family: 'Clicker script', cursive;
+	font-weight: 700;
+	font-size: 45px;
+}
+
+.texte h1{
+	padding-top : 10px;
+	padding-bottom : 10px;
+	display : block;
+	margin: auto;
+	text-align : center;
+	font-family : 'Open Sans Condensed';
+	font-size: 30px;
+	color: #9E9E9E;
+	font-weight : 400;
+}
+
+.texte p {
+	padding-top : 10px;
+	padding-bottom : 20px;
+}
+
+.button {
+	display : block;
+	margin: auto;
+	text-align : center;
+	background-color: #40C4FF;
+	border: none;
+    color: white;
+	width : 160px;
+	height : 20px;
+	opacity : 0.7;
+	text-decoration : none;
+	padding-top : 10px;
+	padding-bottom : 10px;
+	border-radius : 2%;
+	margin-bottom : 10%;
+}
+
+.button:hover{
+	opacity : 0.3;
+}
+
+
