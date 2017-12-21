@@ -1,11 +1,39 @@
 
 /******
-******* PAGE4 : VISITES A REALISER *******
-                         ******/
+******* SVG & TITRES *******
+                     ******/
 
 .titre h1{
   font-size: 60px;
 }
 .titre span{
   font-size: 75px;
+}
+
+.aquitaineTexte, .dordogneTexte{
+	display: block;
+}
+text{
+	font-size: 30px;
+}
+rect{
+	width: 17%;
+	height: 65px;
+}
+
+
+
+/******
+******* PAGE 2 : INFORMATIONS *******
+                    		  ******/
+.page2 .container{
+	display: block;
+	overflow: hidden;
+	width: 95%;
+}
+.page2 .info{
+	float: left;
+	width: 50%;
+	padding-top: 5
+	padding-bottom: 5%;
 }

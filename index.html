@@ -11,10 +11,14 @@
 		<link rel="stylesheet" type="text/css" href="css/styleHome.css">
 		
 		<link href="https://fonts.googleapis.com/css?family=Clicker+Script|Julius+Sans+One|Open+Sans+Condensed:300,700" rel="stylesheet">
+
+			<!-- TELEPHONE -->
+		<link rel="stylesheet" media="(max-width: 500px)" type="text/css" href="css/responsive/homepage.css">
 	</head>
 
 	<body>
 
+		<div class="fullpage" id="fullpage1"></div>
 		<div class="contain">
 			<svg class="carteFrance"  version="1.1" id="Calque_1" xmlns="&ns_svg;" xmlns:xlink="&ns_xlink;" width="597.6" height="670.7"
 			 viewBox="0 0 597.6 670.7" overflow="visible" enable-background="new 0 0 597.6 670.7" xml:space="preserve">
@@ -360,7 +364,7 @@
 
 		<div class="pageAquitaine">
 				<!-- page avec fond fixe -->
-			<div id="fullpage">
+			<div class="fullpage" id="fullpage">
 			</div>
 
 			<div class="page">
@@ -476,19 +480,35 @@
 
 			function redim(){
 				var window_height = $(window).height();
+				var window_width = $(window).width();
 
-				$('.carteFrance').css('height', window_height - 50);
+				if( window_width < 500){
+					$('.carteFrance').css('width', window_width - 50);
 
-				var contain_height = $('.contain').height();
+					$('.carteFrance rect').attr('x', 200);
+  					$('.carteFrance rect').attr('y', 350);
+  					$('.carteFrance tspan').attr('y', 405);
+  					$('.carteFrance tspan, .carteFrance text').attr('x', 205);
+				}
+				else{
+					$('.carteFrance').css('height', window_height - 50);
+				}
 
-				$('.contain').css('padding-top', window_height/2 - contain_height/2);
+				$('.contain').css('height', window_height);
+				$('.fullpage').css('height', window_height);
 
+				var contain_height = $('.carteFrance').height();
+				var containP_height = $('.contain p').height();
+
+				$('.carteFrance').css('padding-top', containP_height/2);
 
 			}
 
 			function redim2(){
 
 				var window_height = $(window).height();
+
+				var window_width = $(window).width();
 				$('#fullpage, .pageAquitaine .page').css('height', window_height);
 				
 				var titre_height = $('.pageAquitaine .titre').height();
@@ -496,7 +516,20 @@
 
 
 				var rectGris_height = $('#rectGris').height();
-				$('.carteAquitaine').css('height', rectGris_height-10);
+				
+				if( window_width < 500){
+					$('.carteAquitaine').css({'width': '100%'});
+					$('.carteAquitaine rect').attr('x', 265);
+  					$('.carteAquitaine rect').attr('y', 251);
+  					$('.carteAquitaine text').attr('x', 268);
+  					$('.carteAquitaine text').attr('y', 283);
+
+
+				}
+				else{
+					$('.carteAquitaine').css('height', rectGris_height-10);
+				}
+
 			}
 
 			$(document).ready(function(){
@@ -506,6 +539,7 @@
 					$('.aquitaine').css({'fill':'#730909'});
 					$('.aquitaineTexte').fadeIn(300);
 				})
+
 				$('.aquitaineBloc').mouseleave(function(){
 					$('.aquitaineTexte').fadeOut(300);
 					$('.aquitaine').css({'fill':'#eaeaea'});
@@ -522,7 +556,7 @@
 
 				$('.aquitaineBloc').click(function(){
 					//window.location = "accueilAquitaine.html";
-					$('.carteFrance').css({'transform-origin': '300px 54%', '-ms-transform':'scale(8)','-moz-transform':'scale(8)','-webkit-transform':'scale(8)', 'transition': 'all 700ms ease-in'});
+					$('.carteFrance').css({'transform-origin': '40% 54%', '-ms-transform':'scale(8)','-moz-transform':'scale(8)','-webkit-transform':'scale(8)', 'transition': 'all 700ms ease-in'});
 					
 					
 					$('.carteFrance').fadeOut(700, function(){
