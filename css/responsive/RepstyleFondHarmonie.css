@@ -5,3 +5,6 @@
 .choix{
 	width: 100%;
 }
+.texteinfosejour p{
+	text-align: justify;
+}
