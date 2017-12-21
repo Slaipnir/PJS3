@@ -1,9 +1,10 @@
 .choixcateg{
 	flex-direction: column;
-
+	align-items: center;
+	justify-content: center;
 }
 .choix{
-	width: 100%;
+	width: 80%;
 }
 .texteinfosejour p{
 	text-align: justify;

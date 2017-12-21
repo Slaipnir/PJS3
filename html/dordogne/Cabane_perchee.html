@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 	<head>
-		<title>La cabane perchee</title>
+		<title>La cabane nature</title>
 		<meta charset="utf-8">
 
 		<meta name="description" content=""> 
@@ -15,6 +15,7 @@
 		<link rel="stylesheet" type="text/css" href="../../css/style.css">
 		<link rel="stylesheet" type="text/css" href="../../css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="../../css/styleHotel.css">
+		<link rel="stylesheet" type="text/css" href="../../css/stylecabaneperchee.css">
 
 			<!-- TELEPHONE -->
 		<link rel="stylesheet" media="(max-width: 800px)" type="text/css" href="../../css/responsive/menu.css">
@@ -38,13 +39,13 @@
 						<a href="../../index.html" title="">Accueil</a>
 					</li>
 					<li>
-						<a href="" title="">La Dordogne</a>
+						<a href="accueil.html" title="">La Dordogne</a>
 					</li>
 					<li>
 						<a href="" title="">Sortir</a>
 					</li>
 					<li>
-						<a href="" title="">Gastronomie</a>
+						<a href="Gastronomie.html" title="">Gastronomie</a>
 					</li>
 					<li class="activeli" id="sur-menu">
 						<a href="Sejourner.html" title="" id="sur-menu-a">Séjourner</a>
@@ -59,7 +60,7 @@
 						</ul>
 					</li>
 					<li>
-						<a href="" title="">Informations</a>
+						<a href="informations.html" title="">Informations</a>
 					</li>
 				</ul>
 			</nav>
@@ -267,10 +268,10 @@
 					
 				</script>
 				<script>
-					function init_map(){var myOptions = {zoom:10,center:new google.maps.LatLng(45.43689920000001,1.18415779999998),mapTypeId: google.maps.MapTypeId.ROADMAP};
+					function init_map(){var myOptions = {zoom:10,center:new google.maps.LatLng(45.479,0.638),mapTypeId: google.maps.MapTypeId.ROADMAP};
 						map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
-						marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(45.43689920000001,1.18415779999998)});
-						infowindow = new google.maps.InfoWindow({content:'<strong>Lov\'nid</strong><br>Moulin de la jarousse<br>'});
+						marker = new google.maps.Marker({map: map,position: new google.maps.LatLng( 45.479,0.638)});
+						infowindow = new google.maps.InfoWindow({content:'<strong>Cabane en pleine nature</strong>'});
 						google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);
 					}google.maps.event.addDomListener(window, 'load', init_map);
 				</script>

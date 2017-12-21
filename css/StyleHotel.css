@@ -15,8 +15,19 @@
 
 .titrehotel{
   padding-top:2%;
+-moz-animation: fadein 4s; /* Firefox */
+    -webkit-animation: fadein 4s; /* Safari et Chrome */
+    -o-animation: fadein 4s; /* Opera */
 }
 
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
 .retour{    
 margin: 0 14% 0;
 } 

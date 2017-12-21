@@ -13,6 +13,19 @@
 .titrep{
 	width: 100%;
 	text-align: center;	
+    animation: fadein 4s;
+    -moz-animation: fadein 4s; /* Firefox */
+    -webkit-animation: fadein 4s; /* Safari et Chrome */
+    -o-animation: fadein 4s; /* Opera */
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
 }
 .choixcateg{
 	padding-top: 40px;
@@ -46,18 +59,15 @@
 		background-size: cover;
 }
 
-.transparent{
-	position: absolute;
-	opacity: 0;
-    background-color: #730909;
-    width: 297px;
-    height: 297px;
-    z-index: 999;
+.choix figure img{
+	-webkit-filter: sepia(0%);
+	filter: sepia(0%);
 
-    transform: rotate(45deg);
 }
+.choix figure:hover img{
+	-webkit-filter: sepia(70%);
+	filter: sepia(70%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
 
-.choix a:hover .transparent{
-	opacity: 0.6;
-	transition-duration: 1s;
 }
