@@ -127,3 +127,14 @@ nav li{
 .container a{
     font-size: 17px;
 }
+
+/******
+******* FOOTER *******
+               ******/
+
+footer p {
+  font-size: 20px;
+}
+footer img {
+    width: 6%;
+}
