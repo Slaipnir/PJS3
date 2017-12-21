@@ -15,11 +15,11 @@
 	font-size: 90px;
 }
 .banniere{
-	display: block;
+	display: cover;
 	overflow: hidden;
 	width: 100%;
 	height: 300px;
-	background: url(../img/table_terrasse.jpg) no-repeat center;
+	background: url(../img/manger.jpg) no-repeat center;
 }
 #ligne{
 	width: 20%;
