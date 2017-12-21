@@ -3,13 +3,16 @@
 	padding: 0;
 }
 
-#fullpage{
+.fullpage{
 	z-index: -5;
 	width: 100%;
 	position: fixed;
 	display: block;
 	background : url('../img/fond.jpg') center no-repeat;
 	opacity: 0.53;
+}
+#fullpage1{
+	opacity: 0.25;
 }
 
 .titre h1{
@@ -27,7 +30,6 @@ span{
 	font-weight: 700;
 	font-size: 105px;
 }
-
 
 /******
 ******* PAGE 1 CARTE : SVG *******
