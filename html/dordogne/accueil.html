@@ -204,6 +204,7 @@
 
 			function redim(){
 				var window_height = $(window).height();
+				var window_width = $(window).width();
 				var titre_height = $('.titre').height();
 				var ul_width = $('.sub-menu').width();
 
@@ -230,7 +231,7 @@
 
 				if( window_width < 500){
 					var header_height = $('header').height();
-					
+
 					$('header').css('margin-top', window_height/2 - header_height/2);
 				}
 			}
