@@ -30,6 +30,16 @@ margin: 0 14% 0;
     color: #677179;
 }
 
+.banniere{
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 300px;
+  background: url('../img/Sejourner/lovnid/couverture_LovNid.jpg') no-repeat center;
+  background-size: cover;
+}
+
+
 /********************************** CARTE ***********************************************/
 
 #carte{
