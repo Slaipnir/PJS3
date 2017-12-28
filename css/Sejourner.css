@@ -18,14 +18,14 @@
 
 .choixcateg{
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	flex-direction: row;
 	flex-wrap: wrap;
 }
 .choix{
 	margin-top: 5%;
 	
-	width: 45%;	
+	width: 35%;	
 }
 .choix img{
 	max-width: 100%;
@@ -34,6 +34,9 @@
 }
 .choix:hover img{
 	/*background-color: rgba(255,140,0,1);*/
+}
+.texteinfosejour{
+	margin-top:2%;
 }
 
 .banniere{
