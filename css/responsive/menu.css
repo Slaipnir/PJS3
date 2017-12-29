@@ -139,3 +139,7 @@ footer p {
 footer img {
     width: 6%;
 }
+
+#logo{
+  display: none;
+}
