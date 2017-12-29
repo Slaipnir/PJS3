@@ -70,6 +70,11 @@ li:not(#sur-menu):hover a{
 	margin-left: 8%;
 }
 
+/* pour les pages sejourner */
+.activeli .sub-menu a{
+	color: #730909;
+}
+
 
 /******
 ******* FOOTER *******
