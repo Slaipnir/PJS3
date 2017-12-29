@@ -42,3 +42,6 @@ flex-direction:column; ;
 .sous-titre .infotxt img{
   display: none;
 }
+.titretxt{
+  width: 100%;
+  }
