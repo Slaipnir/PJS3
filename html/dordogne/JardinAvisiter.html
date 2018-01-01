@@ -137,6 +137,26 @@
 
 			$(document).ready(function(){
 				redim();
+				
+				// menu responsible click
+				$('#nav-icon').on('click',function(){
+			        $(this).toggleClass('close');
+			        $('#nav-icon').toggleClass('open');
+			   	}); 
+
+				$('#nav-icon').click( function() {
+
+						if( $('header').is(':visible')) {	
+							// se ferme
+							$('header').css({'display':'none'});
+
+						}
+						else{
+							// s'ouvre
+							$('header').css({'display':'block'});
+						};
+					});
+
 			});
 
 		</script>

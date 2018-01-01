@@ -12,6 +12,7 @@
 			<!-- structure commune aux pages /!\ ne pas toucher -->
 		<link rel="stylesheet" type="text/css" href="../../css/stylePageChateauxAvisiter.css">
 		<link rel="stylesheet" media="(max-width: 800px)" type="text/css" href="../../css/responsive/menu.css">
+		<link rel="stylesheet" media="(max-width: 800px)" type="text/css" href="../../css/responsive/RespAvisiter.css">
 		
 		<link href="https://fonts.googleapis.com/css?family=Clicker+Script|Julius+Sans+One|Open+Sans+Condensed:300,700" rel="stylesheet">
 	</head>
@@ -138,8 +139,27 @@
 
 			$(document).ready(function(){
 				redim();
-			});
+				
+				// menu responsible click
+				$('#nav-icon').on('click',function(){
+			        $(this).toggleClass('close');
+			        $('#nav-icon').toggleClass('open');
+			   	}); 
 
+				$('#nav-icon').click( function() {
+
+						if( $('header').is(':visible')) {	
+							// se ferme
+							$('header').css({'display':'none'});
+
+						}
+						else{
+							// s'ouvre
+							$('header').css({'display':'block'});
+						};
+					});
+
+			});
 		</script>
 	</body>
 </html>
