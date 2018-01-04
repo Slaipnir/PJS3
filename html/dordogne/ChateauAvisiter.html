@@ -10,7 +10,8 @@
 		<!-- <link rel="stylesheet" type="text/css" href="../../css/style.css"> -->
 		<!-- <link rel="stylesheet" type="text/css" href="../../css/stylePage.css"> -->
 			<!-- structure commune aux pages /!\ ne pas toucher -->
-		<link rel="stylesheet" type="text/css" href="../../css/stylePageChateauxAvisiter.css">
+		<link rel="stylesheet" type="text/css" href="../../css/stylePageAvisiter.css">
+		
 		<link rel="stylesheet" media="(max-width: 800px)" type="text/css" href="../../css/responsive/menu.css">
 		<link rel="stylesheet" media="(max-width: 800px)" type="text/css" href="../../css/responsive/RespAvisiter.css">
 		
@@ -20,31 +21,39 @@
 	<body>
 		<img src="../../img/logo.jpg" alt="" id="logo">
 
-		<div class="container">
-			<li>
-				<a href="../../index.html" title="">Accueil</a>
-			</li>
-			<li class="activeli">
-				<a href="" title="">La Dordogne</a>
-			</li>
-			<li>
-				<a href="" title="">Sortir</a>
-			</li>
-			<li>
-				<a href="Gastronomie.html" title="">Gastronomie</a>
-			</li>
-			<li id="sur-menu">
-				<a href="Sejourner.html" title="" id="sur-menu-a">Séjourner</a>
-
-				<ul class="sub-menu">
+		<header>
+			<nav class="container">
+				<ul>
 					<li>
-						<a href="Harmoniepage.html" title="">En harmonie avec la nature</a>
+						<a href="../../index.html" title="">Accueil</a>
 					</li>
 					<li>
-						<a href="Chateauxpage.html" title="">Les châteaux</a>
+						<a href="accueil.html" title="">La Dordogne</a>
+					</li>
+					<li>
+						<a href="" title="">Sortir</a>
+					</li>
+					<li>
+						<a href="Gastronomie.html" title="">Gastronomie</a>
+					</li>
+					<li class="activeli" id="sur-menu">
+						<a href="Sejourner.html" title="" id="sur-menu-a">Séjourner</a>
+
+						<ul class="sub-menu">
+							<li>
+								<a href="Harmoniepage.html" title="">En harmonie avec la nature</a>
+							</li>
+							<li>
+								<a href="Chateauxpage.html" title="">Les châteaux</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="informations.html" title="">Informations</a>
 					</li>
 				</ul>
-			</li>
+			</nav>
+		</header>
 			
 			<!-- ******** 
 			************* MENU RESPONSIVE : MENU BURGER *************
@@ -61,27 +70,21 @@
 			
 			
 			
-			<li>
-				<a href="informations.html" title="">Informations</a>
-			</li>
-		</div>
-
 		<section>
-			<div class="banniere">
+			<div class="banniere" id="Chateau">
 				<div class="titre">
 					<h1>Les Chateaux : <span>à visiter</span> </h1>
 					<div id="ligne"></div>
 					
 				</div>
+				
 			</div>
-			
-
 			
 			<div class="containPage">
 				<div class="titrep">
-						<h4><span>Notre patrimoine coup de coeur...</span></h4>
+						<h2><span>Notre patrimoine coup de coeur...</span></h2>
 					</div>
-				<div class="imageChateaux">
+				<div class="image">
 			    <img src="../../img/Sortir-Chateaux/chateau03.jpg" title="Château des Milandes"> 
 				</div>
 					<div class="texte"> 
