@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+	<head>
+		<title></title>
+
+		<meta name="description" content=""> 
+		<meta name="keywords" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- <link rel="stylesheet" type="text/css" href="../../css/style.css"> -->
+		<!-- <link rel="stylesheet" type="text/css" href="../../css/stylePage.css"> -->
+			<!-- structure commune aux pages /!\ ne pas toucher -->
+		<link rel="stylesheet" type="text/css" href="../../css/stylePageAvisiter.css">
+		
+		<link rel="stylesheet" media="(max-width: 800px)" type="text/css" href="../../css/responsive/menu.css">
+		<link rel="stylesheet" media="(max-width: 800px)" type="text/css" href="../../css/responsive/RespAvisiter.css">
+		
+		<link href="https://fonts.googleapis.com/css?family=Clicker+Script|Julius+Sans+One|Open+Sans+Condensed:300,700" rel="stylesheet">
+	</head>
+
+	<body>
+		<img src="../../img/logo.jpg" alt="" id="logo">
+
+		<header>
+			<nav class="container">
+				<ul>
+					<li>
+						<a href="../../index.html" title="">Accueil</a>
+					</li>
+					<li>
+						<a href="accueil.html" title="">La Dordogne</a>
+					</li>
+					<li>
+						<a href="" title="">Sortir</a>
+					</li>
+					<li>
+						<a href="Gastronomie.html" title="">Gastronomie</a>
+					</li>
+					<li class="activeli" id="sur-menu">
+						<a href="Sejourner.html" title="" id="sur-menu-a">Séjourner</a>
+
+						<ul class="sub-menu">
+							<li>
+								<a href="Harmoniepage.html" title="">En harmonie avec la nature</a>
+							</li>
+							<li>
+								<a href="Chateauxpage.html" title="">Les châteaux</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="informations.html" title="">Informations</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+			
+			<!-- ******** 
+			************* MENU RESPONSIVE : MENU BURGER *************
+														********* -->
+			<div id="nav-icon">
+			  <span></span>
+			  <span></span>
+			  <span></span>
+			  <span></span>
+			  <span></span>
+			  <span></span>
+			</div>
+		
+			
+			
+			
+		<section>
+			<div class="banniere" id="Musées">
+				<div class="titre">
+					<h1>Les Musées : <span>à visiter</span> </h1>
+					<div id="ligne"></div>
+					
+				</div>
+				
+			</div>
+			
+			<div class="containPage">
+				<div class="titrep">
+						<h2><span>Notre patrimoine coup de coeur...</span></h2>
+					</div>
+				<div class="image">
+			    <img src="../../img/Sortir-Musées/musées03.jpg" title="Musée Vesunna"> 
+				</div>
+					<div class="texte"> 
+						<h1>Vesunna Gallo-Roman Museum</h1>
+						<p>Situé à Perigueux, préfecture de la Dordogne, le musée Vesuna est un musée
+						archéologique construit sur des vestiges de l’ancienne ville romaine Vesuna, 
+						protégée en tant que monument historique. L’exposition met en avant la ville 
+						disparue à travers différentes mosaiques, des maquettes représentant le temple 
+						et l’amphithéâtre actuellement détruits, ainsi que des statues religieuses, des 
+						stèles ou des restes de colonnes.</p>
+					</div>
+					<div class="bouton">
+						<a class="button" href="https://fr.wikipedia.org/wiki/Mus%C3%A9e_Vesunna">En savoir plus</a>
+					</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="container">
+				<img src="../../img/logo-twitter.png" alt="">
+				<img src="../../img/logo-pinterest.png" alt="">
+				<img src="../../img/logo-instagram.png" alt="">
+				<img src="../../img/logo-googleP.png" alt="">
+				<img src="../../img/logo-fb.png" alt="">
+				<p>
+					Rejoignez-nous : 
+				</p>
+			</div>
+		</footer>
+
+		<script type="text/javascript" src="../../js/js.js"></script>
+		<script>
+
+			function redim(){
+				var window_height = $(window).height();
+				var ul_width = $('.sub-menu').width();
+
+				var container_height= $('.container').height();
+
+				var footer_heigt = $('footer').height();
+				var footerP_height = $('footer p').height();
+
+				var banniere_height = $('.banniere').height();
+				var title_height = $('.titre').height();
+
+				$('.titre').css('margin-top', banniere_height/2 - title_height/2 - 2);
+			
+				$('.sub-menu').css('margin-left', -(ul_width/5));
+
+				$('#logo').css('top', container_height/2);
+				$('footer img, footer p').css('margin-top', footer_heigt/2 - footerP_height/2);
+			}
+
+			$(document).ready(function(){
+				redim();
+				
+				// menu responsible click
+				$('#nav-icon').on('click',function(){
+			        $(this).toggleClass('close');
+			        $('#nav-icon').toggleClass('open');
+			   	}); 
+
+				$('#nav-icon').click( function() {
+
+						if( $('header').is(':visible')) {	
+							// se ferme
+							$('header').css({'display':'none'});
+
+						}
+						else{
+							// s'ouvre
+							$('header').css({'display':'block'});
+						};
+					});
+
+			});
+		</script>
+	</body>
+</html>

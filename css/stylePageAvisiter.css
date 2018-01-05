@@ -126,6 +126,10 @@ footer img, footer p{
 	background-size: cover;
 }
 
+#Musées{
+	background: url(../img/Sortir-Musées/musées04.jpg) no-repeat center;
+	background-size: cover;
+}
 
 #ligne{
 	width: 20%;
