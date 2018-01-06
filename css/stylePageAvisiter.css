@@ -131,6 +131,17 @@ footer img, footer p{
 	background-size: cover;
 }
 
+#Eglises{
+	background: url(../img/Sortir-Eglise/eglise02.jpg) no-repeat center;
+	background-size: cover;
+}
+
+#Grottes{
+	background: url(../img/Sortir-Grottes/grottes01.jpg) no-repeat center;
+	background-size: cover;
+}
+
+
 #ligne{
 	width: 20%;
 	height: 0;
