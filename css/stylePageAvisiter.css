@@ -88,6 +88,7 @@ footer p {
 }
 footer .container{
 	width: auto;
+	display: flex;
 	border: none;
 	margin: 0;
 	flex-direction: row-reverse;
@@ -111,18 +112,34 @@ footer img, footer p{
 .banniere{
 	display: block;
 	overflow: hidden;
-	
+	width: 100%;
 	height: 400px;
-	
+	/*background: url(../img/Sortir-Chateaux/fondChateau.jpg) no-repeat center;
+	background-size: cover;*/
 }
 
-#Jardin{
-	background: url(../img/Sortir-Jardins/fondJardins02.jpg) no-repeat center;
+#Jardins{
+	background: url(../img/Sortir-Jardins/FondJardins02.jpg) no-repeat center;
 	background-size: cover;
 }
 
 #Chateau{
-	background: url(../img/Sortir-Chateaux/fondChateau01.jpg) no-repeat center;
+	background: url(../img/Sortir-Chateaux/chateau01.jpg) no-repeat center;
+	background-size: cover;
+}
+
+#Musées{
+	background: url(../img/Sortir-Musées/musées04.jpg) no-repeat center;
+	background-size: cover;
+}
+
+#Eglises{
+	background: url(../img/Sortir-Eglise/eglise02.jpg) no-repeat center;
+	background-size: cover;
+}
+
+#Grottes{
+	background: url(../img/Sortir-Grottes/grottes01.jpg) no-repeat center;
 	background-size: cover;
 }
 
@@ -152,6 +169,26 @@ footer img, footer p{
     margin: auto;
 	width : 30%;
 	height : 40%;
+}
+
+.image2 img{
+	width : 35%;
+}
+
+.image2 img:hover {
+	-webkit-filter: sepia(100%);
+	filter: sepia(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.img{
+	margin-left:2%;
+	margin-right:2%;
+}
+
+.image2 {
+	padding-left: 20%;
 }
 
 .titre h1{
