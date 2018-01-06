@@ -19,7 +19,7 @@
 	overflow: hidden;
 	width: 100%;
 	height: 300px;
-	background: url(../img/manger.jpg) no-repeat center;
+	background: url(../../img/manger.jpg) no-repeat center;
 }
 #ligne{
 	width: 20%;
@@ -32,28 +32,23 @@
 	background-color: #EAEAEA;
 }
 
-.containPage div, h2{
-	width : 50%;
+.containPage div, h2, img, p{
+	width : 100%;
 	margin : auto;
+}
+
+.containPage p{
+	margin-right: auto;
+	text-align: justify;
 }
 
 .containPage div{
 	display : flex;
+	flex-direction: column-reverse;
 }
 
 .containPage h2{
 	font-family: 'Clicker script', cursive;
-	font-size: 65px;
+	font-size: 40px;
 }
 
-.containPage p{
-	width : 50%;
-	float: left;
-	margin-right: 2em
-}
-
-.containPage img{
-	float: right;
-	width: 50%;
-	height: 50%;
-}
