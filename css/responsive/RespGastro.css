@@ -32,14 +32,18 @@
 	background-color: #EAEAEA;
 }
 
-.containPage div, h2, p{
+.containPage .element, h2{
 	width : 100%;
 	margin : auto;
+	margin-top : 5%;
+}
+
+.info{
+	margin : 5%;
 }
 
 .containPage img{
-	width : 100%;
-	
+	width : 99%;
 }
 
 
@@ -48,7 +52,7 @@
 	text-align: justify;
 }
 
-.containPage div{
+.element{
 	display : flex;
 	flex-direction: column;
 }
