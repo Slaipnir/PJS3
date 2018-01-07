@@ -1,3 +1,8 @@
 .choix{
 	width: 80%;
+	padding-top: 0;
+}
+.choix img{
+	width: 325px;
+	height: 325px;
 }

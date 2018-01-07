@@ -59,3 +59,8 @@ rect{
 .page4 h2 span{
 	display: block;
 }
+
+.visite img{
+	width: 325px;
+	height: 325px;
+}
