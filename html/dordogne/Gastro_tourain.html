@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<title>Le Tourain</title>
+		
+		<meta name="description" content=""> 
+		<meta name="keywords" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			
+		<!-- footer & menu -->
+		<link rel="stylesheet" type="text/css" href="../../css/style.css">
+		<!-- structure commune aux pages /!\ ne pas toucher -->
+		<link rel="stylesheet" type="text/css" href="../../css/styleGastronomieAnnexe.css">
+		
+		<!-- TELEPHONE -->
+		<link rel="stylesheet" media="(max-width: 800px)" type="text/css" href="../../css/responsive/menu.css">
+		<link rel="stylesheet" media="(max-width: 800px)" type="text/css" href="../../css/responsive/RespGastro.css">
+		<link href="https://fonts.googleapis.com/css?family=Clicker+Script%7CJulius+Sans+One%7COpen+Sans+Condensed:300,700" rel="stylesheet">
+	</head>
+
+	<body>
+		<img src="../../img/logo.jpg" alt="" id="logo">
+
+		<header>
+			<nav class="container">
+				<ul>
+					<li>
+						<a href="../../index.html" title="Retour à l'accueil">Accueil</a>
+					</li>
+					<li>
+						<a href="accueil.html" title="Bienvenue en Dordogne">La Dordogne</a>
+					</li>
+					<li>
+						<a href="Sortir.html" title="Une envie de sortir">Sortir</a>
+					</li>
+					<li class="activeli">
+						<a href="Gastronomie.html" title="La cuisine dordognaise">Gastronomie</a>
+					</li>
+					<li id="sur-menu">
+						<a href="Sejourner.html" title="Rester en Dordogne" id="sur-menu-a">Séjourner</a>
+
+						<ul class="sub-menu">
+							<li>
+								<a href="Harmoniepage.html" title="En symbiose avec la nature">En harmonie avec la nature</a>
+							</li>
+							<li>
+								<a href="Chateauxpage.html" title="Dans le luxe des chateaux">Les châteaux</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="informations.html" title="Les informations basiques">Informations</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		
+		<!-- ******** 
+			************* MENU RESPONSIVE : MENU BURGER *************
+														********* -->
+			<div id="nav-icon">
+			  <span></span>
+			  <span></span>
+			  <span></span>
+			  <span></span>
+			  <span></span>
+			  <span></span>
+			</div>
+		
+
+		<section>
+			<div class="banniere">
+				<div class="titre">
+					<h1>QUE<span>manger</span> </h1>
+					<div id="ligne"></div>
+				</div>
+			</div>
+			<div class="containPage">
+			
+			
+				<h2>Le Tourain</h2>
+				<div class="info">
+					<p>Surnommée « la soupe du pauvre », le tourain blanchi – que l’on
+					peut également orthographier tourin– est une autre spécialité
+					très appréciée des périgourdins parce que délicieuse et vraiment
+					pas compliquée à réaliser.<br/>
+					Autrefois, les périgourdins utilisaient l’ail qu’ils produisaient 
+					dans leurs jardins pour faire une soupe peu couteuse, en y ajoutant 
+					seulement un de la farine et de l’eau. Mais, il existe une multitude
+					de variantes possibles. On peut y ajouter de l’oignon, de l’ail
+					et des feuilles d’oseille que l’on fait revenir à la graisse
+					d’oie. On le dit « blanchi » en raison de sa liaison
+					avec de la farine et des œufs.<br/>
+					On peut également le faire à la tomate, au vinaigre ou,
+					mieux encore, au verjus. Dans ce ça, un petit filet
+					de vinaigre ou de verjus remplace la tomate. Contrairement
+					à ce que l’on pourrait penser, cette soupe est très douce
+					malgré la présence d’ail, car celui-ci, lorsqu’il est cuit, perd son piquant.</p>
+					<img src="../../img/Gastronomie/tourain.jpg" alt="">
+				</div>
+				
+			</div>
+		</section>
+
+		<footer>
+			<div class="container">
+				<img src="../../img/logo-twitter.png" alt="">
+				<img src="../../img/logo-pinterest.png" alt="">
+				<img src="../../img/logo-instagram.png" alt="">
+				<img src="../../img/logo-googleP.png" alt="">
+				<img src="../../img/logo-fb.png" alt="">
+				<p>
+					Rejoignez-nous : 
+				</p>
+			</div>
+		</footer>
+
+		<script src="../../js/js.js"></script>
+		<script>
+
+			function redim(){
+				var window_height = $(window).height();
+				var ul_width = $('.sub-menu').width();
+
+				var container_height= $('.container').height();
+
+				var footer_heigt = $('footer').height();
+				var footerP_height = $('footer p').height();
+
+				var banniere_height = $('.banniere').height();
+				var title_height = $('.titre').height();
+
+				$('.titre').css('margin-top', banniere_height/2 - title_height/2 - 2);
+			
+				$('.sub-menu').css('margin-left', -(ul_width/5));
+
+				$('#logo').css('top', container_height/2);
+				$('footer img, footer p').css('margin-top', footer_heigt/2 - footerP_height/2);
+				
+						var window_width = $(window).width();
+						
+						if( window_width < 500){
+							var header_height = $('header').height();
+
+							$('header').css('margin-top', window_height/2 - header_height/2);
+						}
+			}
+
+			$(document).ready(function(){
+				redim();
+
+				
+				// menu  		responsible click
+				$('#nav-icon').on('click',function(){
+			        $(this).toggleClass('close');
+			        $('#nav-icon').toggleClass('open');
+			   	}); 
+
+				$('#nav-icon').click( function() {
+
+						if( $('header').is(':visible')) {	
+							// se ferme
+							$('header').css({'display':'none'});
+
+						}
+						else{
+							// s'ouvre
+							$('header').css({'display':'block'});
+						};
+					});
+
+			});
+
+		</script>
+	</body>
+</html>

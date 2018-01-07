@@ -1,4 +1,4 @@
-	/******
+/******
 ******* TEMPLATE DES PAGES *******
 						   ******/
 
@@ -19,7 +19,7 @@
 	overflow: hidden;
 	width: 100%;
 	height: 300px;
-	background: url(../../img/manger.jpg) no-repeat center;
+	background: url(../img/manger.jpg) no-repeat center;
 }
 #ligne{
 	width: 20%;
@@ -30,41 +30,40 @@
 
 .containPage{
 	background-color: #EAEAEA;
+	display : flex;
+	flex-direction : column;
 }
 
-.containPage .element, h2{
-	width : 100%;
+.containPage h2{
+	width : 50%;
 	margin : auto;
-	margin-top : 5%;
+	padding-top : 2%;
 }
 
 .info{
-	margin : 5%;
-}
-
-.containPage img{
-	width : 99%;
-}
-
-
-.containPage p{
-	margin-left: auto;
-	text-align: justify;
-}
-
-.containPage .info p{
-	margin : auto;
-	margin-bottom : 2%;
-}
-
-.element{
 	display : flex;
-	flex-direction: column;
+	flex-direction : column;
+}
+
+.info img{
+	width : 40%;
+	margin : auto;
+	margin-bottom : 5%;
+	border: 1px solid #730909;
+}
+
+.info p{
+	font-family: 'open sans condensed', cursive ;
+	text-align: justify;
+	font-size: 20px;
+	text-align: center;
+	margin-top : 3%;
+	margin-bottom : 3%;
+	margin-left : 10%;
+	margin-right : 10%;
 }
 
 .containPage h2{
 	font-family: 'Clicker script', cursive;
-	font-size: 40px;
-	text-align : center;
+	font-size: 65px;
 }
-

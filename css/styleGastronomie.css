@@ -50,6 +50,12 @@
 	flex-direction : column;
 }
 
+.info img{
+	width : 40%;
+	margin : auto;
+	border: 1px solid #730909;
+}
+
 .containPage h2{
 	font-family: 'Clicker script', cursive;
 	font-size: 65px;
@@ -65,7 +71,6 @@
 }
 
 .element img{
-	float: right;
 	width: 50%;
 	height: 50%;
 	border: 1px solid #730909;
@@ -77,10 +82,6 @@ a{
 	margin-left: 5%;
 	font-size: 18px;
 	margin-top: 1%
-}
-
-.info{
-	flex-direction: column;
 }
 
 .traitbas{
