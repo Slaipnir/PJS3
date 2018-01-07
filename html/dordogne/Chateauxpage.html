@@ -37,7 +37,7 @@
 						<a href="accueil.html" title="Bienvenue en Dordogne">La Dordogne</a>
 					</li>
 					<li>
-						<a href="" title="Une envie de sortir">Sortir</a>
+						<a href="Sortir.html" title="Une envie de sortir">Sortir</a>
 					</li>
 					<li>
 						<a href="Gastronomie.html" title="La cuisine dordognaise">Gastronomie</a>
@@ -153,6 +153,14 @@
 				
 				$('.transparent').css('left', choix_width/2 -transp_height/2-2);
 				$('.transparent').css('top', choix_height/2 -transp_height/2);
+				
+						var window_width = $(window).width();
+						
+						if( window_width < 500){
+							var header_height = $('header').height();
+
+							$('header').css('margin-top', window_height/2 - header_height/2);
+						}
 			}
 			
 			$(document).ready(function(){

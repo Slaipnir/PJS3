@@ -56,15 +56,15 @@
 	justify-content: center;
 }
 
-p {
+.containPage p {
 	font-family: 'open sans condensed', cursive ;
 	text-align: justify;
-	font-size:30px;
+	font-size: 20px;
 	padding-top: 60px;
 	padding-left: 25%;
 	padding-right: 25%;
 }
-
+/*
 .transparent{
 	position: absolute;
 	opacity: 0;
@@ -74,9 +74,13 @@ p {
     z-index: 999;
     transform: rotate(45deg);
 }
+*/
+.choix img{
+	-webkit-filter: sepia(0%);
+	filter: sepia(0%);
+}
 
-
-.choix a:hover .transparent  {
+.choix a:hover img  {
 	-webkit-filter: sepia(100%);
 	filter: sepia(100%);
 	-webkit-transition: .3s ease-in-out;

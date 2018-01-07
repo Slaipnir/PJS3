@@ -41,7 +41,7 @@
 						<a href="accueil.html" title="Bienvenue en Dordogne">La Dordogne</a>
 					</li>
 					<li>
-						<a href="" title="Une envie de sortir">Sortir</a>
+						<a href="Sortir.html" title="Une envie de sortir">Sortir</a>
 					</li>
 					<li>
 						<a href="Gastronomie.html" title="La cuisine dordognaise">Gastronomie</a>
@@ -230,6 +230,14 @@ Vous pourrez y effectuer différentes activités tel que du VTT ou bien vous fai
 						
 						$('#logo').css('top', container_height/2);
 						$('footer img, footer p').css('margin-top', footer_heigt/2 - footerP_height/2);
+						
+						var window_width = $(window).width();
+						
+						if( window_width < 500){
+							var header_height = $('header').height();
+
+							$('header').css('margin-top', window_height/2 - header_height/2);
+						}
 					}
 					
 					$(document).ready(function(){
