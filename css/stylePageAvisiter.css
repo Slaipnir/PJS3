@@ -143,6 +143,14 @@ footer img, footer p{
 	background-size: cover;
 }
 
+.retour{    
+	margin: 0 14% 0;
+} 
+
+.retour a{
+    text-decoration: none;
+    color: #677179;
+}
 
 #ligne{
 	width: 20%;
@@ -189,6 +197,7 @@ footer img, footer p{
 
 .image2 {
 	padding-left: 20%;
+	margin-bottom: 3%;
 }
 
 .titre h1{
@@ -214,6 +223,25 @@ footer img, footer p{
 	font-family: 'Clicker script', cursive;
 	font-weight: 700;
 	font-size: 45px;
+	padding-top:2%;
+	-moz-animation: fadein 4s; /* Firefox */
+    -webkit-animation: fadein 4s; /* Safari et Chrome */
+    -o-animation: fadein 4s; /* Opera */
+}
+
+.titrep2 h2{
+
+	padding-top : 50px;
+	padding-bottom : 30px;
+	text-align : center;	
+	color: #424242;
+	font-family: 'Clicker script', cursive;
+	font-weight: 700;
+	font-size: 45px;
+	padding-top:2%;
+	-moz-animation: fadein 4s; /* Firefox */
+    -webkit-animation: fadein 4s; /* Safari et Chrome */
+    -o-animation: fadein 4s; /* Opera */
 }
 
 .texte h1{
@@ -251,7 +279,8 @@ footer img, footer p{
 	padding-top : 10px;
 	padding-bottom : 10px;
 	border-radius : 2%;
-	margin-bottom : 10%;
+	margin-top: 1%;
+	margin-bottom : 2%;
 }
 
 .button:hover{
