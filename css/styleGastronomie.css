@@ -47,6 +47,9 @@
 }
 
 .containPage p{
+	font-family: 'open sans condensed', cursive ;
+	text-align: justify;
+	font-size: 20px;
 	width : 50%;
 	float: left;
 	margin-right: 2em
