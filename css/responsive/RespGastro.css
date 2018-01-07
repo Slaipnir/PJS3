@@ -32,10 +32,16 @@
 	background-color: #EAEAEA;
 }
 
-.containPage div, h2, img, p{
+.containPage div, h2, p{
 	width : 100%;
 	margin : auto;
 }
+
+.containPage img{
+	width : 100%;
+	
+}
+
 
 .containPage p{
 	margin-right: auto;
@@ -44,7 +50,7 @@
 
 .containPage div{
 	display : flex;
-	flex-direction: column-reverse;
+	flex-direction: column;
 }
 
 .containPage h2{

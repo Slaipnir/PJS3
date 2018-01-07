@@ -30,16 +30,24 @@
 
 .containPage{
 	background-color: #EAEAEA;
+	display : flex;
+	flex-direction : column;
 }
 
-.containPage div, h2{
+.containPage .element,h2,.traitbas{
 	width : 50%;
 	margin : auto;
-	padding-top : 1em;
+	padding-top : 2%;
 }
 
-.containPage div{
+.element{
 	display : flex;
+	flex-direction : row;
+}
+
+.info{
+	display : flex;
+	flex-direction : column;
 }
 
 .containPage h2{
@@ -47,17 +55,36 @@
 	font-size: 65px;
 }
 
-.containPage p{
+.element p{
 	font-family: 'open sans condensed', cursive ;
 	text-align: justify;
 	font-size: 20px;
-	width : 50%;
+	width : 100%;
 	float: left;
-	margin-right: 2em
+	margin-left: 5%
 }
 
-.containPage img{
+.element img{
 	float: right;
 	width: 50%;
 	height: 50%;
+	border: 1px solid #730909;
+}
+
+a{
+    text-decoration: none;
+    color: #730909;
+	margin-left: 5%;
+	font-size: 18px;
+	margin-top: 1%
+}
+
+.info{
+	flex-direction: column;
+}
+
+.traitbas{
+	margin-top: 1%;
+	border-top : 1px solid #730909; 
+	width : 50%; 
 }
