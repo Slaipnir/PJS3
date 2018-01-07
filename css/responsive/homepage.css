@@ -44,11 +44,11 @@ rect{
                     			 ******/
 
 .page4 .visite img {
-    width: 250px;
-    height: 250px;
+    width: 325px;
+    height: 325px;
 }
 .page4 .visite{
-	width: 250px;
+	width: 325px;
 	margin: 5% auto 0 auto;
 }
 .page4 #Blocvisites{
@@ -58,9 +58,4 @@ rect{
 
 .page4 h2 span{
 	display: block;
-}
-
-.visite img{
-	width: 325px;
-	height: 325px;
 }
