@@ -119,29 +119,38 @@ text{
 .dep img{
 	width: 75%;
 }
+/******
+******* PAGE 2 CARTE : SVG *******
+		  			       ******/
+
+.carteAquitaine rect{
+	height: 40px;
+}
+.texte{
+	display: none;
+}
+
 .carteAquitaine .region{
 	fill:#FBFBFA;
 	stroke:#730909;
 	stroke-width: 1.5;
 }
-
 #dordogne{
 	fill: #eaeaea;
 }
 
-/******
-******* PAGE 2 CARTE : SVG *******
-		  			       ******/
-
-.dordogneBloc:hover{
+.bloc:hover{
 	cursor: pointer;
 }
-.dordogneBloc:hover #dordogne{
+.bloc:hover .region{
 	fill: #730909;
 }
-.dordogneBloc rect{
-	height: 40px;
+#dordogne:hover{
+	fill: #730909;
 }
-.dordogneTexte{
-	display: none;
+.bloc:hover #dordogne{
+	fill: #730909;
+}
+.bloc:hover .texte{
+	display: block;
 }
