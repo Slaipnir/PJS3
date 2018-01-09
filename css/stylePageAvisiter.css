@@ -181,6 +181,14 @@ footer img, footer p{
 
 #myImg:hover {opacity: 0.7;}
 
+#myImg2 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg2:hover {opacity: 0.7;}
+
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
@@ -260,7 +268,12 @@ footer img, footer p{
 }
 
 .image2 img{
-	width : 35%;
+	width : 28%;
+	height : 40%;
+}
+
+.image2 p {
+	margin-right:38%;
 }
 
 .image2 img:hover {
@@ -276,7 +289,7 @@ footer img, footer p{
 }
 
 .image2 {
-	padding-left: 20%;
+	padding-left: 30%;
 	margin-bottom: 3%;
 }
 
@@ -291,8 +304,6 @@ footer img, footer p{
 .titre span{
 	font-family: 'Clicker script', cursive;
 	font-size : 60px;
-	
-	
 }	
 	
 .titrep h2{
