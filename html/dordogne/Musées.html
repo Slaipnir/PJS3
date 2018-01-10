@@ -2,7 +2,6 @@
 <html>
 	<head>
 		<title>Musées</title>
-		<meta charset="utf-8">
 
 		<meta name="description" content=""> 
 		<meta name="keywords" content="">
@@ -113,7 +112,7 @@
 			</div>
 
 			<div class="image2">
-				<img class="img" src="../../img/Sortir-Musees/MuseeChaiLardimalie.jpg" title="Musée du Chai de Lardimalie :
+				<!--<img class="img" src="../../img/Sortir-Musees/MuseeChaiLardimalie.jpg" title="Musée du Chai de Lardimalie :
 
 Etant à l’origine un chai construit en 1902 dans la commune de Saint-Pierre-de-Chignac, située près de Périgueux, le musée du Chai de Lardimalie est un musée privé consacré à la cultivation du vin et aux activités viticole et vinicole de la ville de Périgueux, il permet aussi aux visiteurs de s’imprégner de la vie rurale et citadine du 19ieme siècle. Possédé par la même famille depuis cinq générations, il est ouvert aux visiteurs.
 " alt="MuseeChaiLardimalie">
@@ -121,9 +120,29 @@ Etant à l’origine un chai construit en 1902 dans la commune de Saint-Pierre-d
 
 				<img class="img" src="../../img/Sortir-Musees/MuseeMedecine.jpg" title="Musée de la Médecine : 
 
-A 30 km au nord-ouest de Terrasson-Lavilledieu dans le Périgord noir, le musée de la médecine est installé dans l’ancien hospice de Hautefort, fondé en 1669 par le Marquis Jacques-François de Hautefort à la suite d'un édit royal de Louis XIV qui préconisait la création de lieux d'accueil des pauvres en province. La visite guidée est particulièrement intéressante, vous permettant de mieux comprendre les progrès de la gynécologie, de la pédiatrie ou encore de la radiologie. " alt="MuseeMedecine">
-				
-			</div>
+A 30 km au nord-ouest de Terrasson-Lavilledieu dans le Périgord noir, le musée de la médecine est installé dans l’ancien hospice de Hautefort, fondé en 1669 par le Marquis Jacques-François de Hautefort à la suite d'un édit royal de Louis XIV qui préconisait la création de lieux d'accueil des pauvres en province. La visite guidée est particulièrement intéressante, vous permettant de mieux comprendre les progrès de la gynécologie, de la pédiatrie ou encore de la radiologie. " alt="MuseeMedecine">-->
+			
+<img id="myImg" src="../../img/Sortir-Musees/MuseeChaiLardimalie.jpg" title="Le Musée du Chai de Lardimalie" alt="<i>Musée du Chai de Lardimalie</i><br><br> 
+Etant à l’origine un chai construit en 1902 dans la commune de Saint-Pierre-de-Chignac, située près de Périgueux, le musée du Chai de Lardimalie est un musée privé consacré à la cultivation du vin et aux activités viticole et vinicole de la ville de Périgueux, il permet aussi aux visiteurs de s’imprégner de la vie rurale et citadine du 19ieme siècle. Possédé par la même famille depuis cinq générations, il est ouvert aux visiteurs." width="300" height="200">
+
+<img id="myImg2" src="../../img/Sortir-Musees/MuseeMedecine.jpg" title="Le Musée de la médecine" alt="<i>Le Musée de la Médecine</i><br><br>
+Site classé, les jardins romantiques et pittoresques de Marqueyssac offrent autour d’un château couvert de lauzes du début du XIXe siècle, plus de 6 kilomètres de promenades ombragées, bordées de 150 000 buis centenaires taillés à la main, et agrémentées de belvédères, rocailles, cascades et théâtres de verdure…
+Aménagé sur un éperon rocheux, le parc de 22 ha domine la vallée de ses hautes falaises. Du Belvédère de la Dordogne, à 130 mètres au-dessus de la rivière, se déploie le plus beau panorama du Périgord, témoin d’un riche passé historique et d’un patrimoine naturel grandiose. Ce point de vue exceptionnel embrasse l’ensemble de la vallée, ses châteaux et ses plus beaux villages de France : Beynac, Fayrac, Castelnaud, la Roque-Gageac et Domme…" width="300" height="200">
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+  
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>	
+</div>
+		</div>
 		</div>
 		</section>
 		
@@ -196,5 +215,37 @@ A 30 km au nord-ouest de Terrasson-Lavilledieu dans le Périgord noir, le musée
 
 			});
 		</script>
+
+			<script type="text/javascript">
+  
+  
+		  // Get the modal
+		var modal = document.getElementById('myModal');
+
+		// Get the image and insert it inside the modal - use its "alt" text as a caption
+		var img = document.getElementById('myImg');
+		var img2 = document.getElementById('myImg2');
+		var modalImg = document.getElementById("img01");
+		var captionText = document.getElementById("caption");
+		img.onclick = function(){
+		    modal.style.display = "block";
+		    modalImg.src = this.src;
+		    captionText.innerHTML = this.alt;
+		}
+		img2.onclick = function(){
+		    modal.style.display = "block";
+		    modalImg.src = this.src;
+		    captionText.innerHTML = this.alt;
+		}
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() { 
+		  modal.style.display = "none";
+		}
+
+</script>
 	</body>
 </html>

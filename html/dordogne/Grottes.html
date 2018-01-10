@@ -3,7 +3,6 @@
 	<head>
 		<title>Grottes</title>
 
-		<meta charset="utf-8">
 		<meta name="description" content=""> 
 		<meta name="keywords" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -113,7 +112,7 @@
 			</div>
 
 			<div class="image2">
-				<img class="img" src="../../img/Sortir-Grottes/GrotteFontGaume.jpg" title="La Grotte de Font-de-Gaume :
+				<!--<img class="img" src="../../img/Sortir-Grottes/GrotteFontGaume.jpg" title="La Grotte de Font-de-Gaume :
 
 Située aux Eyzies-de-Tayac, la grotte de Font-de-Gaume est l’un des plus beaux sanctuaires paléolithiques du monde, le seul à peintures polychromes qui soit encore ouvert au public. Elle est accessible par un sentier qui longe sur quatre cents mètres la haute corniche surplombant un vallon sec. Elle se présente comme un long boyau de 120 mètres de développement d’où divergent trois galeries latérales.
 Elle abrite plus de deux cents figurations peintes ou gravées de bisons, chevaux, mammouths et rennes, figurations humaines stylisées, etc., organisées en composition (frise), voire en scènes (rennes affrontés). Par comparaison stylistique, ces témoignages artistiques sont généralement rattachés à la période magdalénienne (vers 15 000 av. J.-C.)." alt="Grotte de Font de Gaume">
@@ -122,10 +121,32 @@ Elle abrite plus de deux cents figurations peintes ou gravées de bisons, chevau
 
 Au cœur du Périgord Noir, à quelques kilomètres de la prestigieuse Vallée de la Vézère,la grotte de Rouffignac, est une immense caverne.
 La grotte de Rouffignac, un peu en dehors des circuits touristiques habituels, se trouve sur la commune de Rouffignac-Saint-Cernin-de-Reillac, à 4 km au sud du village. A seulement 15 kilomètres des Eyzies-de-Tayac (en passant par la D31), elle mérite un détour. L'ouverture de la grotte se situe sur le flanc droit de la vallée de Labinche (affluent du Manaurie). La grotte est située sur le plateau calcaire de Légal, au milieu de la forêt. On pénètre dans la grotte par l'un de ses trois porches naturels, probablement le seul qui était accessible au Paléolithique.
-Dans le passé plusieurs noms ont été attribués à Rouffignac, comme la grotte de Miremont, le Cro des Cluzeau ou le Cro de Granville." alt="Grotte de Rouffignac">
+Dans le passé plusieurs noms ont été attribués à Rouffignac, comme la grotte de Miremont, le Cro des Cluzeau ou le Cro de Granville." alt="Grotte de Rouffignac">-->
 
 
-			</div>
+<img id="myImg" src="../../img/Sortir-Grottes/GrotteFontGaume.jpg" title="La Grotte du Font-de-Gaume" alt="<i>La Grotte du Font-de-Gaume</i><br><br> 
+Située aux Eyzies-de-Tayac, la grotte de Font-de-Gaume est l’un des plus beaux sanctuaires paléolithiques du monde, le seul à peintures polychromes qui soit encore ouvert au public. Elle est accessible par un sentier qui longe sur quatre cents mètres la haute corniche surplombant un vallon sec. Elle se présente comme un long boyau de 120 mètres de développement d’où divergent trois galeries latérales.
+Elle abrite plus de deux cents figurations peintes ou gravées de bisons, chevaux, mammouths et rennes, figurations humaines stylisées, etc., organisées en composition (frise), voire en scènes (rennes affrontés). Par comparaison stylistique, ces témoignages artistiques sont généralement rattachés à la période magdalénienne (vers 15 000 av. J.-C.)." width="300" height="200">
+
+<img id="myImg2" src="../../img/Sortir-Grottes/GrotteRouffignac.jpg" title="La Grotte de Rouffignac" alt="<i>La Grotte de Rouffignac</i><br><br>
+Au cœur du Périgord Noir, à quelques kilomètres de la prestigieuse Vallée de la Vézère,la grotte de Rouffignac, est une immense caverne.
+La grotte de Rouffignac, un peu en dehors des circuits touristiques habituels, se trouve sur la commune de Rouffignac-Saint-Cernin-de-Reillac, à 4 km au sud du village. A seulement 15 kilomètres des Eyzies-de-Tayac (en passant par la D31), elle mérite un détour. L'ouverture de la grotte se situe sur le flanc droit de la vallée de Labinche (affluent du Manaurie). La grotte est située sur le plateau calcaire de Légal, au milieu de la forêt. On pénètre dans la grotte par l'un de ses trois porches naturels, probablement le seul qui était accessible au Paléolithique.
+Dans le passé plusieurs noms ont été attribués à Rouffignac, comme la grotte de Miremont, le Cro des Cluzeau ou le Cro de Granville." width="300" height="200">
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+  
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>	
+</div>
+		</div>
 		</div>
 		</section>
 
@@ -199,5 +220,39 @@ Dans le passé plusieurs noms ont été attribués à Rouffignac, comme la grott
 			});
 
 		</script>
+
+			</script>
+
+			<script type="text/javascript">
+  
+  
+		  // Get the modal
+		var modal = document.getElementById('myModal');
+
+		// Get the image and insert it inside the modal - use its "alt" text as a caption
+		var img = document.getElementById('myImg');
+		var img2 = document.getElementById('myImg2');
+		var modalImg = document.getElementById("img01");
+		var captionText = document.getElementById("caption");
+		img.onclick = function(){
+		    modal.style.display = "block";
+		    modalImg.src = this.src;
+		    captionText.innerHTML = this.alt;
+		}
+		img2.onclick = function(){
+		    modal.style.display = "block";
+		    modalImg.src = this.src;
+		    captionText.innerHTML = this.alt;
+		}
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() { 
+		  modal.style.display = "none";
+		}
+
+</script>
 	</body>
 </html>

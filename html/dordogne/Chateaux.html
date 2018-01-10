@@ -3,7 +3,6 @@
 	<head>
 		<title>Chateaux</title>
 
-		<meta charset="utf-8">
 		<meta name="description" content=""> 
 		<meta name="keywords" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -113,15 +112,36 @@
 			</div>
 
 			<div class="image2">
-				<img class="img" src="../../img/Sortir-Chateaux/ChateauDeMonfort.jpg" title="Le Chateau de Monfort : 
+				<!--<img class="img" src="../../img/Sortir-Chateaux/ChateauDeMonfort.jpg" title="Le Chateau de Monfort : 
 
 Le château (en grande partie XIIIème - XVème, classé MH) est ancré sur une paroi rocheuse et domine un cingle (boucle encaissée) de la Dordogne, appelé « cingle de Montfort ». La construction présente un bel ensemble de fortifications. Une partie des bâtiments est située en surplomb au-dessus de la Dordogne. Assorti d'un triple rempart, le château épouse la forme de la falaise qui lui sert d'assiette. Dénué de symétrie, il développe, du côté de la Dordogne, une façade sobre flanquée d'un robuste donjon à machicoulis. Vers le bourg, ce donjon épaule un logis du XVème et une tour polygonale. L'escalier d'entrée, encadré de statues, conduit à un châtelet précédant une cour intérieure dont la tour polygonale est dotée d'un crénelage anachronique, et la tour circulaire est coiffée d'un lanternon germanique. Des loggias à l'italienne, insolites, déparent l’ensemble." alt="Chateau de Montfort">
 
 				<img class="img" src="../../img/Sortir-Chateaux/ChateauDeBeynac.jpg" title="Le Chateau de Beynac : 
 
 Le château de Beynac, la plus emblématique Forteresse Médiévale de la Dordogne et la plus authentique de France, est dressée depuis 1115 sur son piton rocheux dominant le village de Beynac-et-Cazenac, et la Dordogne.
-Visiter Beynac, c’est traverser 5 siècles de l’Histoire de France, sur les traces de Richard Coeur de Lion, Simon de Montfort et la Guerre de Cent Ans. De la rigueur défensive de son Donjon XII à l’escalier Renaissance XVII en passant par la Salle des États XV, la cuisine XIII et la barbacane, son état de conservation exceptionnel vous propose un voyage inoubliable au coeur du Moyen Âge." alt="Chateau de Beynac">
-			</div>
+Visiter Beynac, c’est traverser 5 siècles de l’Histoire de France, sur les traces de Richard Coeur de Lion, Simon de Montfort et la Guerre de Cent Ans. De la rigueur défensive de son Donjon XII à l’escalier Renaissance XVII en passant par la Salle des États XV, la cuisine XIII et la barbacane, son état de conservation exceptionnel vous propose un voyage inoubliable au coeur du Moyen Âge." alt="Chateau de Beynac">-->
+
+<img id="myImg" src="../../img/Sortir-Chateaux/ChateauDeMonfort.jpg" title="Le Château de Monfort" alt="<i>Le Château de Monfort</i><br><br> 
+Le château (en grande partie XIIIème - XVème, classé MH) est ancré sur une paroi rocheuse et domine un cingle (boucle encaissée) de la Dordogne, appelé « cingle de Montfort ». La construction présente un bel ensemble de fortifications. Une partie des bâtiments est située en surplomb au-dessus de la Dordogne. Assorti d'un triple rempart, le château épouse la forme de la falaise qui lui sert d'assiette. Dénué de symétrie, il développe, du côté de la Dordogne, une façade sobre flanquée d'un robuste donjon à machicoulis. Vers le bourg, ce donjon épaule un logis du XVème et une tour polygonale. L'escalier d'entrée, encadré de statues, conduit à un châtelet précédant une cour intérieure dont la tour polygonale est dotée d'un crénelage anachronique, et la tour circulaire est coiffée d'un lanternon germanique. Des loggias à l'italienne, insolites, déparent l’ensemble." alt="Chateau de Montfort width="300" height="200">
+
+<img id="myImg2" src="../../img/Sortir-Chateaux/ChateauDeBeynac.jpg" title="Le Château de Beynac" alt="<i>Le Château de Beynac</i><br><br>
+Le château de Beynac, la plus emblématique Forteresse Médiévale de la Dordogne et la plus authentique de France, est dressée depuis 1115 sur son piton rocheux dominant le village de Beynac-et-Cazenac, et la Dordogne.
+Visiter Beynac, c’est traverser 5 siècles de l’Histoire de France, sur les traces de Richard Coeur de Lion, Simon de Montfort et la Guerre de Cent Ans. De la rigueur défensive de son Donjon XII à l’escalier Renaissance XVII en passant par la Salle des États XV, la cuisine XIII et la barbacane, son état de conservation exceptionnel vous propose un voyage inoubliable au coeur du Moyen Âge." width="300" height="200">
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+  
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>	
+</div>
+		</div>
 		</div>
 		</section>
 
@@ -194,5 +214,37 @@ Visiter Beynac, c’est traverser 5 siècles de l’Histoire de France, sur les 
 
 			});
 		</script>
+
+		<script type="text/javascript">
+  
+  
+		  // Get the modal
+		var modal = document.getElementById('myModal');
+
+		// Get the image and insert it inside the modal - use its "alt" text as a caption
+		var img = document.getElementById('myImg');
+		var img2 = document.getElementById('myImg2');
+		var modalImg = document.getElementById("img01");
+		var captionText = document.getElementById("caption");
+		img.onclick = function(){
+		    modal.style.display = "block";
+		    modalImg.src = this.src;
+		    captionText.innerHTML = this.alt;
+		}
+		img2.onclick = function(){
+		    modal.style.display = "block";
+		    modalImg.src = this.src;
+		    captionText.innerHTML = this.alt;
+		}
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() { 
+		  modal.style.display = "none";
+		}
+
+</script>
 	</body>
 </html>
